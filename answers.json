@@ -1,0 +1,142 @@
+{
+    "answers": [
+        {
+            "id": 1,
+            "question": "What is the sum of values that yyy can take in log⁡2(log⁡3(log⁡4(y2)))=0\\log_2 (\\log_3 (\\log_4 (y^2))) = 0log2​(log3​(log4​(y2)))=0?",
+            "type": "type",
+            "answer": "0"
+        },
+        {
+            "id": 2,
+            "question": "If log⁡abc=x\\log_a bc = xloga​bc=x , log⁡bac=y\\log_b ac = ylogb​ac=y, log⁡cab=z\\log_c ab = zlogc​ab=z , then find the value of 1x+1+1y+1+1z+1\\frac{1}{x+1}+\\frac{1}{y+1}+\\frac{1}{z+1}x+11​+y+11​+z+11​",
+            "type": "type",
+            "answer": "1"
+        },
+        {
+            "id": 3,
+            "question": "Solve for xxx: log⁡x4+log⁡x16+log⁡x64+log⁡x256=10\\log_x 4 + \\log_x 16 + \\log_x 64 + \\log_x 256 = 10logx​4+logx​16+logx​64+logx​256=10",
+            "type": "mcq",
+            "answer": "B"
+        },
+        {
+            "id": 4,
+            "question": "If log⁡2(log⁡3(log⁡4x))=log⁡3(log⁡4(log⁡2y))=log⁡4(log⁡2(log⁡3z))=0\\log_2(\\log_3(\\log_4x)) = \\log_3(\\log_4(\\log_2y)) = \\log_4(\\log_2(\\log_3z)) = 0log2​(log3​(log4​x))=log3​(log4​(log2​y))=log4​(log2​(",
+            "type": "type",
+            "answer": "89"
+        },
+        {
+            "id": 5,
+            "question": "Which of the following statements is not correct?",
+            "type": "mcq",
+            "answer": "A"
+        },
+        {
+            "id": 6,
+            "question": "If log⁡2(log⁡3(log⁡4x))=log⁡3(log⁡4(log⁡2y))=log⁡4(log⁡2(log⁡3z))=0\\log_2(\\log_3(\\log_4x)) = \\log_3(\\log_4(\\log_2y)) = \\log_4(\\log_2(\\log_3z)) = 0log2​(log3​(log4​x))=log3​(log4​(log2​y))=log4​(log2​(",
+            "type": "type",
+            "answer": "89"
+        },
+        {
+            "id": 7,
+            "question": "What are the possible values of yyy if (log⁡3y)2−7log⁡3y+12=0(\\log_3 y)^2 - 7 \\log_3 y +12= 0(log3​y)2−7log3​y+12=0?",
+            "type": "mcq",
+            "answer": "D"
+        },
+        {
+            "id": 8,
+            "question": "The value of log⁡2log⁡2log⁡3log⁡5(125)3\\log _2 \\log _2 \\log _3 \\log _5(125)^3log2​log2​log3​log5​(125)3 is",
+            "type": "mcq",
+            "answer": "A"
+        },
+        {
+            "id": 9,
+            "question": "If log⁡2(log⁡3(log⁡4x))=log⁡3(log⁡4(log⁡2y))=log⁡4(log⁡2(log⁡3z))=0\\log_2(\\log_3(\\log_4x)) = \\log_3(\\log_4(\\log_2y)) = \\log_4(\\log_2(\\log_3z)) = 0log2​(log3​(log4​x))=log3​(log4​(log2​y))=log4​(log2​(",
+            "type": "type",
+            "answer": "89"
+        },
+        {
+            "id": 10,
+            "question": "If log⁡2(log⁡3(log⁡4x))=log⁡3(log⁡4(log⁡2y))=log⁡4(log⁡2(log⁡3z))=0\\log_2(\\log_3(\\log_4x)) = \\log_3(\\log_4(\\log_2y)) = \\log_4(\\log_2(\\log_3z)) = 0log2​(log3​(log4​x))=log3​(log4​(log2​y))=log4​(log2​(",
+            "type": "type",
+            "answer": "89"
+        },
+        {
+            "id": 11,
+            "question": "What is the value of: log⁡5log⁡5(3125)\\log_5 \\log_5 (3125)log5​log5​(3125)?",
+            "type": "type",
+            "answer": "1"
+        },
+        {
+            "id": 12,
+            "question": "If xlogx243=a5x^{log_x 243} = a^5xlogx​243=a5, then what should be the value of aaa?",
+            "type": "type",
+            "answer": "3"
+        },
+        {
+            "id": 13,
+            "question": "Solve for xxx: log⁡10(x2−10x+34)=1\\log_{10} (x^2 - 10x + 34) = 1log10​(x2−10x+34)=1",
+            "type": "mcq",
+            "answer": "C"
+        },
+        {
+            "id": 14,
+            "question": "If log⁡77x=3\\log_7 7^x = 3log7​7x=3 then what is the value of yyy in log⁡7y=x\\log_7 y = xlog7​y=x?",
+            "type": "type",
+            "answer": "343"
+        },
+        {
+            "id": 15,
+            "question": "Find the minimum value of (log⁡ab)2+(log⁡ba)2(\\log_a b)^2 + (\\log_b a)^2(loga​b)2+(logb​a)2 where a,b>0a, b > 0a,b>0.",
+            "type": "type",
+            "answer": "2"
+        },
+        {
+            "id": 16,
+            "question": "If log⁡2(x)+log⁡2(x+4)=5\\log_{2}(x) + \\log_{2}(x + 4) = 5log2​(x)+log2​(x+4)=5, find the value of xxx.",
+            "type": "mcq",
+            "answer": "C"
+        },
+        {
+            "id": 17,
+            "question": "1log⁡7210+1log⁡5210+1log⁡3210\\dfrac{1}{\\log_7 210} + \\dfrac{1}{\\log_5 210} +\\dfrac{1}{\\log_3 210}log7​2101​+log5​2101​+log3​2101​ equals:",
+            "type": "mcq",
+            "answer": "D"
+        },
+        {
+            "id": 18,
+            "question": "log⁡4x+log⁡48=3\\log_4 x + \\log_4 8 = 3log4​x+log4​8=3",
+            "type": "mcq",
+            "answer": "C"
+        },
+        {
+            "id": 19,
+            "question": "Given log⁡2=0.3010\\log 2 = 0.3010log2=0.3010 and log⁡3=0.4771\\log 3 = 0.4771log3=0.4771, find the value of log⁡45\\log 45log45",
+            "type": "mcq",
+            "answer": "D"
+        },
+        {
+            "id": 20,
+            "question": "If log⁡(axbycz)=log⁡(a4b6c9)+log⁡(a3b5c2)+log⁡(abc)\\log (a^x b^y c^z) = \\log (a^4b^6c^9) + \\log (a^3b^5c^2) + \\log (abc)log(axbycz)=log(a4b6c9)+log(a3b5c2)+log(abc), then find x+y+zx+y+zx+y+z.",
+            "type": "mcq",
+            "answer": "B"
+        },
+        {
+            "id": 21,
+            "question": "What should be the value of aaa so that the value of log⁡a6+log⁡a5+log⁡a4+⋯+log⁡a1\\log_a 6 + \\log_a 5 + \\log_a 4 + \\dots + \\log_a 1loga​6+loga​5+loga​4+⋯+loga​1 equals 111?",
+            "type": "mcq",
+            "answer": "A"
+        },
+        {
+            "id": 22,
+            "question": "Solve log⁡(xn×yn)zn+log⁡(yn×zn)xn+log⁡(zn×xn)yn\\log \\dfrac{(x^n \\times y^n)}{z^n} + \\log\\dfrac{(y^n \\times z^n)}{x^n} + \\log\\dfrac{(z^n \\times x^n)}{y^n}logzn(xn×yn)​+logxn(yn×zn)​+logyn(zn×xn)​, if x",
+            "type": "mcq",
+            "answer": "D"
+        },
+        {
+            "id": 23,
+            "question": "If log⁡yxy+log⁡xyx=0\\log_y \\dfrac{x}{y} + \\log_x \\dfrac{y}{x} = 0logy​yx​+logx​xy​=0, then which of the following is true?",
+            "type": "mcq",
+            "answer": "C"
+        }
+    ]
+}

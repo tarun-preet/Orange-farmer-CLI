@@ -1,0 +1,12 @@
+{
+  "name": "afterboards-automation",
+  "version": "1.0.0",
+  "description": "Automation script for afterboards.in practice tests",
+  "main": "automation.js",
+  "scripts": {
+    "start": "node automation.js"
+  },
+  "dependencies": {
+    "puppeteer-core": "^22.0.0"
+  }
+}
