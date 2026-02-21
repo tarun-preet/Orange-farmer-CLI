@@ -2,6 +2,7 @@ const puppeteer = require('puppeteer-core');
 const fs = require('fs');
 const path = require('path');
 const readline = require('readline');
+const { execSync } = require('child_process');
 
 // ═══════════════════════════════════════════════════════════════════════════
 // CONFIGURATION - Loaded from config.json
@@ -10,8 +11,9 @@ const CONFIG_PATH = path.join(__dirname, 'config.json');
 
 // Default configuration
 const DEFAULT_CONFIG = {
-    browserPath: 'C:\\Users\\NIKHIL\\AppData\\Local\\BraveSoftware\\Brave-Browser\\Application\\brave.exe',
-    userDataDir: 'C:\\Users\\NIKHIL\\AppData\\Local\\BraveSoftware\\Brave-Browser\\User Data',
+    browserPath: '',
+    userDataDir: '',
+    browserName: '',
     practiceUrl: 'https://www.afterboards.in/practice?section=',
     delayPerQuestion: 3000,
     questionsToAnswer: 3,
@@ -44,6 +46,113 @@ function loadConfig() {
 function saveConfig(config) {
     fs.writeFileSync(CONFIG_PATH, JSON.stringify(config, null, 4));
 }
+
+// ═══════════════════════════════════════════════════════════════════════════
+// BROWSER AUTO-DETECTION (runs once at startup, cached in memory)
+// ═══════════════════════════════════════════════════════════════════════════
+function detectBrowsers() {
+    const platform = process.platform; // 'win32' or 'darwin'
+    let candidates = [];
+
+    if (platform === 'darwin') {
+        // ── macOS ──
+        const home = process.env.HOME || '';
+        const appSupport = path.join(home, 'Library', 'Application Support');
+
+        // Note: Chrome is excluded — remote debugging issues with default profile
+        candidates = [
+            {
+                name: 'Brave',
+                paths: ['/Applications/Brave Browser.app/Contents/MacOS/Brave Browser'],
+                userDataDir: path.join(appSupport, 'BraveSoftware', 'Brave-Browser')
+            },
+            {
+                name: 'Microsoft Edge',
+                paths: ['/Applications/Microsoft Edge.app/Contents/MacOS/Microsoft Edge'],
+                userDataDir: path.join(appSupport, 'Microsoft Edge')
+            },
+            {
+                name: 'Chromium',
+                paths: ['/Applications/Chromium.app/Contents/MacOS/Chromium'],
+                userDataDir: path.join(appSupport, 'Chromium')
+            },
+            {
+                name: 'Opera',
+                paths: ['/Applications/Opera.app/Contents/MacOS/Opera'],
+                userDataDir: path.join(appSupport, 'com.operasoftware.Opera')
+            },
+            {
+                name: 'Vivaldi',
+                paths: ['/Applications/Vivaldi.app/Contents/MacOS/Vivaldi'],
+                userDataDir: path.join(appSupport, 'Vivaldi')
+            }
+        ];
+    } else {
+        // ── Windows ──
+        const localAppData = process.env.LOCALAPPDATA || '';
+        const programFilesX86 = process.env['PROGRAMFILES(X86)'] || process.env.PROGRAMFILES || '';
+        const programFiles = process.env.PROGRAMFILES || '';
+        const appData = process.env.APPDATA || '';
+
+        // Note: Chrome is excluded — remote debugging rejects default profile
+        candidates = [
+            {
+                name: 'Brave',
+                paths: [
+                    path.join(localAppData, 'BraveSoftware', 'Brave-Browser', 'Application', 'brave.exe')
+                ],
+                userDataDir: path.join(localAppData, 'BraveSoftware', 'Brave-Browser', 'User Data')
+            },
+            {
+                name: 'Microsoft Edge',
+                paths: [
+                    path.join(programFilesX86, 'Microsoft', 'Edge', 'Application', 'msedge.exe'),
+                    path.join(programFiles, 'Microsoft', 'Edge', 'Application', 'msedge.exe')
+                ],
+                userDataDir: path.join(localAppData, 'Microsoft', 'Edge', 'User Data')
+            },
+            {
+                name: 'Chromium',
+                paths: [
+                    path.join(localAppData, 'Chromium', 'Application', 'chrome.exe')
+                ],
+                userDataDir: path.join(localAppData, 'Chromium', 'User Data')
+            },
+            {
+                name: 'Opera',
+                paths: [
+                    path.join(localAppData, 'Programs', 'Opera', 'opera.exe')
+                ],
+                userDataDir: path.join(appData, 'Opera Software', 'Opera Stable')
+            },
+            {
+                name: 'Vivaldi',
+                paths: [
+                    path.join(localAppData, 'Vivaldi', 'Application', 'vivaldi.exe')
+                ],
+                userDataDir: path.join(localAppData, 'Vivaldi', 'User Data')
+            }
+        ];
+    }
+
+    const found = [];
+    for (const browser of candidates) {
+        for (const exePath of browser.paths) {
+            if (fs.existsSync(exePath)) {
+                found.push({
+                    name: browser.name,
+                    browserPath: exePath,
+                    userDataDir: browser.userDataDir
+                });
+                break;
+            }
+        }
+    }
+    return found;
+}
+
+// Cache detected browsers once at startup
+const DETECTED_BROWSERS = detectBrowsers();
 
 const CONFIG = loadConfig();
 
@@ -113,22 +222,32 @@ const stats = {
 // ═══════════════════════════════════════════════════════════════════════════
 function showBanner() {
     console.clear();
+    const o = '\x1b[38;2;255;140;0m';
+    const y = '\x1b[38;2;255;200;50m';
+    const a = '\x1b[38;2;200;120;40m';
+    const br = '\x1b[38;2;140;90;30m';
+    const dm = '\x1b[38;2;160;130;80m';
+    const r = c.reset;
     console.log(`
-${c.yellow}${c.bright}
-   ____                             ______                              
-  / __ \\_________ _____  ____ ____ / ____/___ __________ ___  ___  _____
- / / / / ___/ __ \`/ __ \\/ __ \`/ _ \\/ /_  / __ \`/ ___/ __ \`__ \\/ _ \\/ ___/
-/ /_/ / /  / /_/ / / / / /_/ /  __/ __/ / /_/ / /  / / / / / /  __/ /    
-\\____/_/   \\__,_/_/ /_/\\__, /\\___/_/    \\__,_/_/  /_/ /_/ /_/\\___/_/     
-                      /____/                                             
-${c.reset}
-${c.dim}═══════════════════════════════════════════════════════════════════════${c.reset}
-${c.cyan}  Afterboards.in Auto-Learning Practice Bot${c.reset}
-${c.dim}  by ${c.magenta}apartment firm${c.reset}
-${c.dim}═══════════════════════════════════════════════════════════════════════${c.reset}
-${c.yellow}  Disclaimer: Bot learns as you use it. Use on a single topic for 
-  best result. Default best with Logarithms Level 2.${c.reset}
-${c.dim}═══════════════════════════════════════════════════════════════════════${c.reset}
+${br}  ╔${'═'.repeat(62)}╗${r}
+${br}  ║${r}                                                              ${br}║${r}
+${br}  ║${r}   ${o}${c.bright} ██████  ██████   █████  ██   ██  ██████  ███████${r}        ${br}║${r}
+${br}  ║${r}   ${o}${c.bright}██    ██ ██   ██ ██   ██ ███  ██ ██       ██${r}             ${br}║${r}
+${br}  ║${r}   ${y}${c.bright}██    ██ ██████  ███████ ██ █ ██ ██   ███ █████${r}          ${br}║${r}
+${br}  ║${r}   ${y}${c.bright}██    ██ ██   ██ ██   ██ ██  ███ ██    ██ ██${r}             ${br}║${r}
+${br}  ║${r}   ${a}${c.bright} ██████  ██   ██ ██   ██ ██   ██  ██████  ███████${r}        ${br}║${r}
+${br}  ║${r}                                                              ${br}║${r}
+${br}  ║${r}   ${o}${c.bright}███████  █████  ██████  ██   ██ ███████ ██████${r}          ${br}║${r}
+${br}  ║${r}   ${o}${c.bright}██      ██   ██ ██   ██ ███ ███ ██      ██   ██${r}         ${br}║${r}
+${br}  ║${r}   ${y}${c.bright}█████   ███████ ██████  ██ █ ██ █████   ██████${r}          ${br}║${r}
+${br}  ║${r}   ${y}${c.bright}██      ██   ██ ██   ██ ██   ██ ██      ██   ██${r}         ${br}║${r}
+${br}  ║${r}   ${a}${c.bright}██      ██   ██ ██   ██ ██   ██ ███████ ██   ██${r}         ${br}║${r}
+${br}  ║${r}                                                              ${br}║${r}
+${br}  ║${r}            ${dm}v1.0.0  ·  harvest season${r}                        ${br}║${r}
+${br}  ║${r}                                                              ${br}║${r}
+${br}  ╚${'═'.repeat(62)}╝${r}
+${c.dim}  by ${c.magenta}apartment firm${r}
+${c.dim}  Afterboards.in Auto-Learning Practice Bot${r}
 `);
 }
 
@@ -141,7 +260,9 @@ ${c.dim}────────────────────────
   ${c.yellow}3${c.reset}) View Statistics
   ${c.magenta}4${c.reset}) View Configuration
   ${c.blue}5${c.reset}) Edit Configuration
-  ${c.red}6${c.reset}) Exit
+  ${c.white}6${c.reset}) Select Browser
+  ${c.yellow}7${c.reset}) Reset Database
+  ${c.red}8${c.reset}) Exit
 ${c.dim}───────────────────────────────────────${c.reset}
 `);
 }
@@ -170,10 +291,12 @@ ${c.dim}────────────────────────
 }
 
 function showConfig() {
+    const browserLabel = CONFIG.browserName ? `${c.cyan}${CONFIG.browserName}${c.reset}` : `${c.dim}(unknown)${c.reset}`;
     console.log(`
 ${c.bright}${c.white}  CONFIGURATION${c.reset}  ${c.dim}(edit: config.json)${c.reset}
 ${c.dim}═══════════════════════════════════════════════════════════════${c.reset}
   ${c.bright}Browser Settings${c.reset}
+  ${c.cyan}Browser:${c.reset}               ${browserLabel}
   ${c.cyan}1. browserPath:${c.reset}        ${c.dim}${CONFIG.browserPath}${c.reset}
   ${c.cyan}2. userDataDir:${c.reset}        ${c.dim}${CONFIG.userDataDir}${c.reset}
   ${c.cyan}3. headless:${c.reset}           ${CONFIG.headless ? c.green + 'true' : c.yellow + 'false'}${c.reset}
@@ -211,12 +334,8 @@ ${c.dim}────────────────────────
         let newValue;
         switch (choice) {
             case '1':
-                newValue = await prompt(`New browser path [${CONFIG.browserPath}]: `);
-                if (newValue) CONFIG.browserPath = newValue;
-                break;
             case '2':
-                newValue = await prompt(`New user data dir [${CONFIG.userDataDir}]: `);
-                if (newValue) CONFIG.userDataDir = newValue;
+                await selectBrowser();
                 break;
             case '3':
                 newValue = await prompt(`Headless mode (true/false) [${CONFIG.headless}]: `);
@@ -275,17 +394,84 @@ async function prompt(question) {
     });
 }
 
+// ═══════════════════════════════════════════════════════════════════════════
+// BROWSER SELECTION (uses prompt + colors, must be defined after them)
+// ═══════════════════════════════════════════════════════════════════════════
+async function selectBrowser() {
+    if (DETECTED_BROWSERS.length === 0) {
+        console.log(`\n${c.yellow}⚠ No browsers detected automatically.${c.reset}`);
+        const customPath = await prompt('Enter browser executable path: ');
+        if (customPath) {
+            CONFIG.browserPath = customPath;
+            const customData = await prompt('Enter user data directory: ');
+            if (customData) CONFIG.userDataDir = customData;
+            CONFIG.browserName = 'Custom';
+            saveConfig(CONFIG);
+            log.success('Browser configured manually.');
+        }
+        return;
+    }
+
+    console.log(`\n${c.bright}${c.white}  DETECTED BROWSERS${c.reset}`);
+    console.log(`${c.dim}───────────────────────────────────────${c.reset}`);
+    DETECTED_BROWSERS.forEach((b, i) => {
+        const current = (b.browserPath === CONFIG.browserPath) ? ` ${c.green}← current${c.reset}` : '';
+        console.log(`  ${c.green}${i + 1}${c.reset}) ${b.name}${current}`);
+        console.log(`     ${c.dim}${b.browserPath}${c.reset}`);
+    });
+    console.log(`  ${c.yellow}${DETECTED_BROWSERS.length + 1}${c.reset}) Custom path (enter manually)`);
+    console.log(`${c.dim}───────────────────────────────────────${c.reset}\n`);
+
+    const choice = await prompt(`Select browser (1-${DETECTED_BROWSERS.length + 1}): `);
+    const num = parseInt(choice);
+
+    if (num >= 1 && num <= DETECTED_BROWSERS.length) {
+        const selected = DETECTED_BROWSERS[num - 1];
+        CONFIG.browserPath = selected.browserPath;
+        CONFIG.userDataDir = selected.userDataDir;
+        CONFIG.browserName = selected.name;
+        saveConfig(CONFIG);
+        log.success(`Browser set to ${c.cyan}${selected.name}${c.reset}`);
+    } else if (num === DETECTED_BROWSERS.length + 1) {
+        const customPath = await prompt('Enter browser executable path: ');
+        if (customPath) {
+            // Block Chrome on both Windows and Mac
+            const baseName = path.basename(customPath).toLowerCase();
+            if (baseName === 'chrome.exe' || baseName === 'google chrome') {
+                log.error('Google Chrome is not supported due to remote debugging restrictions.');
+                log.info(`Use ${c.cyan}Brave${c.reset}, ${c.cyan}Edge${c.reset}, or another Chromium browser instead.`);
+                return;
+            }
+            CONFIG.browserPath = customPath;
+            const customData = await prompt('Enter user data directory: ');
+            if (customData) CONFIG.userDataDir = customData;
+            CONFIG.browserName = 'Custom';
+            saveConfig(CONFIG);
+            log.success('Browser configured manually.');
+        }
+    } else {
+        log.error('Invalid selection.');
+    }
+}
+
 // Selected topic (default from config)
 let selectedTopic = TOPICS.find(t => t.name === CONFIG.defaultTopic) || TOPICS[0];
 
 async function runCLI() {
+    // Auto-prompt browser selection on first run or if configured browser is missing
+    if (!fs.existsSync(CONFIG.browserPath)) {
+        console.log(`\n${c.yellow}${c.bright}⚠ Browser not found at:${c.reset} ${c.dim}${CONFIG.browserPath}${c.reset}`);
+        console.log(`${c.cyan}Let's set up your browser — this only happens once.${c.reset}`);
+        await selectBrowser();
+    }
+
     showBanner();
 
     while (true) {
         console.log(`${c.dim}Current Topic: ${c.cyan}${selectedTopic.name}${c.reset}\n`);
         showMenu();
 
-        const choice = await prompt('Select option (1-6): ');
+        const choice = await prompt('Select option (1-8): ');
 
         switch (choice) {
             case '1':
@@ -314,10 +500,29 @@ async function runCLI() {
                 await editConfig();
                 break;
             case '6':
+                await selectBrowser();
+                break;
+            case '7': {
+                const confirm = await prompt(`${c.red}Are you sure? This will delete ALL learned answers. (yes/no): ${c.reset}`);
+                if (confirm.toLowerCase() === 'yes') {
+                    const answersPath = path.join(__dirname, 'answers.json');
+                    fs.writeFileSync(answersPath, JSON.stringify({ answers: [] }, null, 4));
+                    stats.questionsAnswered = 0;
+                    stats.correctMatches = 0;
+                    stats.newLearned = 0;
+                    stats.cyclesCompleted = 0;
+                    log.success('Database has been reset.');
+                } else {
+                    log.info('Reset cancelled.');
+                }
+                await prompt('Press Enter to continue...');
+                break;
+            }
+            case '8':
                 console.log(`\n${c.yellow}👋 Goodbye!${c.reset}\n`);
                 process.exit(0);
             default:
-                log.error('Invalid option. Please select 1-6.');
+                log.error('Invalid option. Please select 1-8.');
         }
 
         showBanner();
@@ -529,18 +734,163 @@ function findAnswer(questionText, answers) {
     return null;
 }
 
+// ═══════════════════════════════════════════════════════════════════════════
+// LIVE AUTOMATION DASHBOARD
+// ═══════════════════════════════════════════════════════════════════════════
+const dashState = {
+    cycles: 0,
+    answered: 0,
+    skipped: 0,
+    currentQ: 0,
+    totalQ: 5,
+    lastHit: null,
+    status: 'Idle',
+    drawn: false,
+    startTime: null,
+    timeLimitMs: 0,   // 0 = unlimited
+    killed: false      // set to true to break out of main loop
+};
+
+function formatElapsed(ms) {
+    const totalSec = Math.floor(ms / 1000);
+    const h = Math.floor(totalSec / 3600);
+    const m = Math.floor((totalSec % 3600) / 60);
+    const s = totalSec % 60;
+    if (h > 0) return `${h}h ${String(m).padStart(2, '0')}m ${String(s).padStart(2, '0')}s`;
+    return `${m}m ${String(s).padStart(2, '0')}s`;
+}
+
+function renderDashboard() {
+    const W = 50; // inner width of box
+    const o = '\x1b[38;2;255;140;0m';
+    const y = '\x1b[38;2;255;200;50m';
+    const br = '\x1b[38;2;140;90;30m';
+    const dm = '\x1b[38;2;160;130;80m';
+    const r = c.reset;
+
+    // Helper: pad a visible string to exact width (ignoring ANSI codes)
+    const pad = (str, len) => {
+        const visible = str.replace(/\x1b\[[0-9;]*m/g, '');
+        const diff = Math.max(0, len - visible.length);
+        return str + ' '.repeat(diff);
+    };
+
+    // Elapsed time
+    const elapsed = dashState.startTime ? Date.now() - dashState.startTime : 0;
+    const elapsedStr = formatElapsed(elapsed);
+    const timeLimit = dashState.timeLimitMs > 0
+        ? ` / ${formatElapsed(dashState.timeLimitMs)}`
+        : '';
+
+    // Progress bar for question (1-5)
+    const barLen = 20;
+    const filled = Math.round((dashState.currentQ / dashState.totalQ) * barLen);
+    const empty = barLen - filled;
+    const qBar = `${c.green}${'\u2588'.repeat(filled)}${c.dim}${'\u2591'.repeat(empty)}${r}`;
+    const qText = `${dashState.currentQ}/${dashState.totalQ}`;
+
+    // Database hit/miss
+    let dbText;
+    if (dashState.lastHit === null) {
+        dbText = `${c.dim}---${r}`;
+    } else if (dashState.lastHit) {
+        dbText = `${c.green}\u2713 HIT${r}`;
+    } else {
+        dbText = `${c.red}\u2717 MISS${r}`;
+    }
+
+    // Build rows with exact padding
+    const titleRow = pad(`  ${o}${c.bright}\ud83c\udf4a ORANGE FARMER${r} ${dm}\u2014 ${dashState.status}${r}`, W);
+    const cyclesRow = pad(`  ${y}Cycles:${r}    ${c.bright}${dashState.cycles}${r}`, W);
+    const answeredRow = pad(`  ${y}Answered:${r}  ${c.bright}${dashState.answered}${r}`, W);
+    const skippedRow = pad(`  ${y}Skipped:${r}   ${c.bright}${dashState.skipped}${r}`, W);
+    const timeRow = pad(`  ${y}Runtime:${r}   ${c.bright}${elapsedStr}${timeLimit}${r}`, W);
+    const qRow = pad(`  ${y}Question:${r}  [${qBar}] ${qText}`, W);
+    const dbRow = pad(`  ${y}Database:${r}  ${dbText}`, W);
+    const hintRow = pad(`  ${dm}Press ${c.bright}Q${r}${dm} to stop and return to menu${r}`, W);
+
+    const lines = [
+        `${br}\u2554${'\u2550'.repeat(W)}\u2557${r}`,
+        `${br}\u2551${r}${titleRow}${br}\u2551${r}`,
+        `${br}\u2560${'\u2550'.repeat(W)}\u2563${r}`,
+        `${br}\u2551${r}${cyclesRow}${br}\u2551${r}`,
+        `${br}\u2551${r}${answeredRow}${br}\u2551${r}`,
+        `${br}\u2551${r}${skippedRow}${br}\u2551${r}`,
+        `${br}\u2551${r}${timeRow}${br}\u2551${r}`,
+        `${br}\u2551${r}${' '.repeat(W)}${br}\u2551${r}`,
+        `${br}\u2551${r}${qRow}${br}\u2551${r}`,
+        `${br}\u2551${r}${dbRow}${br}\u2551${r}`,
+        `${br}\u2551${r}${' '.repeat(W)}${br}\u2551${r}`,
+        `${br}\u2551${r}${hintRow}${br}\u2551${r}`,
+        `${br}\u255a${'\u2550'.repeat(W)}\u255d${r}`
+    ];
+
+    if (dashState.drawn) {
+        process.stdout.write(`\x1b[${lines.length}A`);
+    }
+    process.stdout.write(lines.join('\n') + '\n');
+    dashState.drawn = true;
+}
+
 const wait = (ms) => new Promise(resolve => setTimeout(resolve, ms));
+
+// Kill all processes of the configured browser before launching automation
+function killBrowserProcesses() {
+    const exeName = path.basename(CONFIG.browserPath).toLowerCase();
+
+    try {
+        if (process.platform === 'darwin') {
+            // macOS: use pkill with the browser name
+            const macProcessMap = {
+                'brave browser': 'Brave Browser',
+                'microsoft edge': 'Microsoft Edge',
+                'chromium': 'Chromium',
+                'opera': 'Opera',
+                'vivaldi': 'Vivaldi'
+            };
+            const processName = macProcessMap[(CONFIG.browserName || '').toLowerCase()] || CONFIG.browserName || exeName;
+            execSync(`pkill -f "${processName}"`, { stdio: 'ignore' });
+        } else {
+            // Windows: use taskkill
+            const winProcessMap = {
+                'brave.exe': 'brave.exe',
+                'msedge.exe': 'msedge.exe',
+                'opera.exe': 'opera.exe',
+                'vivaldi.exe': 'vivaldi.exe'
+            };
+            const processName = winProcessMap[exeName] || exeName;
+            execSync(`taskkill /F /IM ${processName} /T`, { stdio: 'ignore' });
+        }
+        log.success(`Closed all ${CONFIG.browserName || exeName} processes`);
+    } catch (e) {
+        // No processes were running — that's fine
+        log.info(`No existing ${CONFIG.browserName || exeName} processes found`);
+    }
+}
 
 async function startAutomation() {
     const answers = loadAnswers();
     log.info(`Loaded ${c.bright}${answers.length}${c.reset} answers from database`);
 
     log.divider();
-    log.warn('Close ALL browser windows before continuing!');
+    log.info(`Browser: ${c.cyan}${CONFIG.browserName || 'Unknown'}${c.reset}`);
     log.info(`Topic: ${c.cyan}${c.bright}${selectedTopic.name}${c.reset}`);
     log.divider();
 
     await prompt('Press Enter to launch browser...');
+
+    // Ask for time limit
+    const timeInput = await prompt(`Run for how many minutes? (0 = unlimited): `);
+    const timeMins = parseInt(timeInput) || 0;
+    dashState.timeLimitMs = timeMins > 0 ? timeMins * 60 * 1000 : 0;
+    dashState.startTime = Date.now();
+    dashState.killed = false;
+    dashState.cycles = 0;
+    dashState.answered = 0;
+    dashState.skipped = 0;
+
+    // Kill existing browser processes to avoid profile lock conflicts
+    killBrowserProcesses();
 
     log.info('Launching browser...');
     const browser = await puppeteer.launch({
@@ -654,9 +1004,7 @@ async function startAutomation() {
             return results.slice(0, 20);
         });
 
-        console.log(`\n${c.dim}Topics with Practice buttons found:${c.reset}`);
-        pageTopics.forEach(t => console.log(`  ${c.dim}- ${t}${c.reset}`));
-        console.log('');
+
 
         // Try to click the selected topic
         const clicked = await page.evaluate((topicName) => {
@@ -723,21 +1071,61 @@ async function startAutomation() {
         }
         await wait(4000);
 
-        // Main loop
+        // Main loop — dashboard replaces verbose output
+        console.clear();
+        dashState.status = 'Running';
+        dashState.drawn = false;
+        dashState.startTime = Date.now();
+
+        // Keypress listener: press Q to stop
+        if (process.stdin.isTTY) {
+            process.stdin.setRawMode(true);
+            process.stdin.resume();
+            process.stdin.on('data', (key) => {
+                if (key.toString().toLowerCase() === 'q') {
+                    dashState.killed = true;
+                    dashState.status = 'Stopping...';
+                    renderDashboard();
+                }
+                // Ctrl+C
+                if (key[0] === 3) process.exit(0);
+            });
+        }
+
+        renderDashboard();
+
         let cycleCount = 0;
         while (true) {
+            // Check kill flag
+            if (dashState.killed) break;
+            // Check time limit
+            if (dashState.timeLimitMs > 0 && (Date.now() - dashState.startTime) >= dashState.timeLimitMs) {
+                dashState.status = 'Time\'s up!';
+                renderDashboard();
+                break;
+            }
+
             cycleCount++;
             stats.cyclesCompleted = cycleCount;
-            log.cycle(cycleCount);
+            dashState.cycles = cycleCount;
+            dashState.currentQ = 0;
+            dashState.lastHit = null;
+            renderDashboard();
 
             // Reload answers every cycle to pick up changes
             const answers = loadAnswers();
-            log.info(`Database: ${c.bright}${answers.length}${c.reset} questions`);
 
             for (let q = 1; q <= 5; q++) {
-                stats.questionsAnswered++;
-                console.log(`\n${c.bright}${c.white}── Question ${q}/5 ──${c.reset}`);
-                log.info(`Waiting ${DELAY_PER_QUESTION / 1000}s...`);
+                if (dashState.killed) break;
+                if (dashState.timeLimitMs > 0 && (Date.now() - dashState.startTime) >= dashState.timeLimitMs) {
+                    dashState.killed = true;
+                    dashState.status = 'Time\'s up!';
+                    renderDashboard();
+                    break;
+                }
+
+                dashState.currentQ = q;
+                renderDashboard();
                 await wait(DELAY_PER_QUESTION);
 
                 // Get question text
@@ -753,7 +1141,6 @@ async function startAutomation() {
                     return '';
                 });
 
-                log.question(`${questionText.substring(0, 70)}...`);
 
                 // Detect question type based on presence of numpad
                 const hasNumpad = await page.evaluate(() => {
@@ -765,33 +1152,38 @@ async function startAutomation() {
                 });
 
                 const questionType = hasNumpad ? 'type' : 'mcq';
-                log.info(`Type: ${c.yellow}${questionType.toUpperCase()}${c.reset}`);
 
                 // Determine the answer to use
                 let answerToUse = null;
 
                 if (q <= QUESTIONS_TO_ANSWER) {
+                    stats.questionsAnswered++;
+                    dashState.answered = stats.questionsAnswered;
+                    renderDashboard();
+
                     // Try to find matching answer
                     answerToUse = findAnswer(questionText, answers);
 
                     if (!answerToUse) {
                         // No match - use random answer
-                        log.warn('No match - using random answer');
+                        dashState.lastHit = false;
+                        renderDashboard();
                         if (questionType === 'mcq') {
                             const randomOptions = ['A', 'B', 'C', 'D'];
                             answerToUse = { type: 'mcq', answer: randomOptions[Math.floor(Math.random() * 4)] };
                         } else {
-                            answerToUse = { type: 'type', answer: '1' }; // Default type-in
+                            answerToUse = { type: 'type', answer: '1' };
                         }
                     } else {
-                        console.log(`✓ Found answer: ${answerToUse.answer}`);
+                        dashState.lastHit = true;
+                        renderDashboard();
                     }
 
                     // Execute the answer
                     if (questionType === 'type') {
                         // Type using numpad
                         const answerStr = answerToUse.answer.toString();
-                        console.log(`Typing ${answerStr} using numpad...`);
+
 
                         // Clear first
                         await page.evaluate(() => {
@@ -812,7 +1204,7 @@ async function startAutomation() {
                             }, digit);
                             await wait(200);
                         }
-                        console.log(`Typed: ${answerStr}`);
+
 
                     } else {
                         // MCQ - find and click options
@@ -824,7 +1216,7 @@ async function startAutomation() {
                         const optionLetter = answerVal.charAt(0).toUpperCase();
                         const optionIndex = optionLetter.charCodeAt(0) - 65;
 
-                        console.log(`Selecting MCQ option: "${optionLetter}" (derived from "${answerVal}"), index: ${optionIndex}`);
+
 
                         // Debug: Find ALL potential option elements
                         const debug = await page.evaluate(() => {
@@ -866,7 +1258,7 @@ async function startAutomation() {
 
                             return results;
                         });
-                        console.log('Potential options:', JSON.stringify(debug.slice(0, 15), null, 2));
+
 
                         // Click the option - try multiple strategies
                         const clicked = await page.evaluate((idx) => {
@@ -925,20 +1317,17 @@ async function startAutomation() {
                             return { success: false, radioCount: radios.length, labelCount: optionLabels.length, divCount: unique.length };
                         }, optionIndex);
 
-                        if (clicked.success) {
-                            console.log(`Clicked via ${clicked.method}: "${clicked.text || clicked.index}"`);
-                        } else {
-                            console.log(`Could not click option. Radios: ${clicked.radioCount}, Labels: ${clicked.labelCount}, Divs: ${clicked.divCount}`);
-                        }
+
                     }
                 } else {
-                    console.log(`⏭ Skipping question ${q} (last 2) - no answer selected`);
+                    dashState.skipped++;
+                    renderDashboard();
                 }
 
                 await wait(1000); // 1 second gap before Submit
 
                 // ALWAYS click Submit after handling the question
-                console.log('Clicking Submit...');
+
                 await page.evaluate(() => {
                     const buttons = Array.from(document.querySelectorAll('button'));
                     const submitBtn = buttons.find(b => b.textContent.trim() === 'Submit');
@@ -947,7 +1336,7 @@ async function startAutomation() {
                 await wait(1500); // Wait for answer to appear
 
                 // DEBUG: Dump page info to understand how answers are displayed
-                console.log('🔍 Extracting correct answer...');
+
                 const pageDebug = await page.evaluate(() => {
                     const info = {
                         greenElements: [],
@@ -1023,12 +1412,7 @@ async function startAutomation() {
                     return info;
                 });
 
-                console.log('\n📊 PAGE DEBUG DUMP:');
-                console.log('Green elements:', JSON.stringify(pageDebug.greenElements.slice(0, 5), null, 2));
-                console.log('Text with "correct":', JSON.stringify(pageDebug.textWithCorrect.slice(0, 5), null, 2));
-                console.log('Options area elements:', JSON.stringify(pageDebug.allOptionsArea.slice(0, 8), null, 2));
-                console.log('SVG elements:', JSON.stringify(pageDebug.svgElements.slice(0, 5), null, 2));
-                console.log('');
+
 
                 const extractedAnswer = await page.evaluate((qType) => {
                     const result = { found: false, answer: null, method: null, debug: [] };
@@ -1256,15 +1640,7 @@ async function startAutomation() {
                 }, questionType);
 
                 if (extractedAnswer.found) {
-                    console.log(`✅ Extracted correct answer: "${extractedAnswer.answer}" (via ${extractedAnswer.method})`);
-
-                    // Save to answers.json
                     saveAnswer(questionText, questionType, extractedAnswer.answer);
-                } else {
-                    console.log('⚠️ Could not extract correct answer from page');
-                    if (extractedAnswer.debug.length > 0) {
-                        console.log('Debug info:', extractedAnswer.debug);
-                    }
                 }
 
                 await wait(500);
@@ -1275,11 +1651,11 @@ async function startAutomation() {
                     const nextBtn = buttons.find(b => b.textContent.trim() === 'Next Question');
                     if (nextBtn) nextBtn.click();
                 });
-                console.log('Clicked Next Question');
+
                 await wait(1000);
             }
 
-            console.log(`\n✓ All 5 questions done. Submitting final test...\n`);
+            dashState.status = 'Submitting'; renderDashboard();
 
             // Final submit to end test
             await page.evaluate(() => {
@@ -1289,10 +1665,10 @@ async function startAutomation() {
             });
             await wait(3000);
 
-            log.success(`Cycle ${cycleCount} complete! Starting next test...`);
+            dashState.status = 'Next test...';
+            renderDashboard();
 
             // Click "Attempt Next Test" button to start the next test directly
-            log.info('Looking for "Attempt Next Test" button...');
 
             const clickedNextTest = await page.evaluate(() => {
                 const allElements = Array.from(document.querySelectorAll('*'));
@@ -1342,40 +1718,41 @@ async function startAutomation() {
                 return { success: false };
             });
 
-            if (clickedNextTest.success) {
-                log.success(`Clicked "${clickedNextTest.text}" (via ${clickedNextTest.method})`);
-            } else {
-                log.warn('Could not find "Attempt Next Test" button, trying to find any next/retry button...');
-
+            if (!clickedNextTest.success) {
                 // Fallback: Try other common button names
-                const fallbackClicked = await page.evaluate(() => {
+                await page.evaluate(() => {
                     const buttons = Array.from(document.querySelectorAll('button'));
                     const fallbackTexts = ['Retry', 'Try Again', 'Start Again', 'Reattempt', 'New Test'];
-
                     for (const btn of buttons) {
                         const text = btn.textContent?.trim() || '';
                         for (const fallback of fallbackTexts) {
                             if (text.toLowerCase().includes(fallback.toLowerCase())) {
                                 btn.click();
-                                return { success: true, text: text };
+                                return;
                             }
                         }
                     }
-                    return { success: false };
                 });
-
-                if (fallbackClicked.success) {
-                    log.success(`Fallback: Clicked "${fallbackClicked.text}"`);
-                } else {
-                    log.error('Could not find any button to start next test');
-                }
             }
+
+            dashState.status = 'Running';
+            renderDashboard();
 
             await wait(4000);
         }
 
     } catch (error) {
         log.error(`Error: ${error.message}`);
+    } finally {
+        // Restore stdin
+        if (process.stdin.isTTY) {
+            process.stdin.setRawMode(false);
+            process.stdin.removeAllListeners('data');
+            process.stdin.pause();
+        }
+        dashState.status = 'Stopped';
+        renderDashboard();
+        console.log('');
         await prompt('Press Enter to return to menu...');
     }
 }

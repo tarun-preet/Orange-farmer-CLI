@@ -1,6 +1,7 @@
 {
     "browserPath": "C:\\Users\\NIKHIL\\AppData\\Local\\BraveSoftware\\Brave-Browser\\Application\\brave.exe",
     "userDataDir": "C:\\Users\\NIKHIL\\AppData\\Local\\BraveSoftware\\Brave-Browser\\User Data",
+    "browserName": "Brave",
     "practiceUrl": "https://www.afterboards.in/practice?section=",
     "delayPerQuestion": 3000,
     "questionsToAnswer": 3,

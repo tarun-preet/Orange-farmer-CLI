@@ -137,6 +137,966 @@
             "question": "If log⁡yxy+log⁡xyx=0\\log_y \\dfrac{x}{y} + \\log_x \\dfrac{y}{x} = 0logy​yx​+logx​xy​=0, then which of the following is true?",
             "type": "mcq",
             "answer": "C"
+        },
+        {
+            "id": 24,
+            "question": "The value of log⁡57624+log⁡279−log⁡8127\\log_{576} 24 + \\log_{27} 9 - \\log_{81} 27log576​24+log27​9−log81​27 is:",
+            "type": "mcq",
+            "answer": "B"
+        },
+        {
+            "id": 25,
+            "question": "If log⁡27=1.431\\log 27 = 1.431log27=1.431, then the value of log⁡9\\log 9log9 is:",
+            "type": "mcq",
+            "answer": "A"
+        },
+        {
+            "id": 26,
+            "question": "If log⁡ab+log⁡ba=log⁡(a+b)\\log \\frac{a}{b} + \\log \\frac{b}{a} = \\log (a + b)logba​+logab​=log(a+b) , then the value of (a+b)(a+b)(a+b) equals",
+            "type": "mcq",
+            "answer": "A"
+        },
+        {
+            "id": 27,
+            "question": "If aaa is a positive constant greater than 1, and log⁡ax=log⁡a2(x+20)\\log_a x = \\log_{a^2}(x+20)loga​x=loga2​(x+20). Then find the value of (x).",
+            "type": "type",
+            "answer": "5"
+        },
+        {
+            "id": 28,
+            "question": "If log⁡2(log⁡3(log⁡4x))=log⁡3(log⁡4(log⁡2y))=log⁡4(log⁡2(log⁡3z))=0\\log_2(\\log_3(\\log_4x)) = \\log_3(\\log_4(\\log_2y)) = \\log_4(\\log_2(\\log_3z)) = 0log2​(log3​(log4​x))=log3​(log4​(log2​y))=log4​(log2​(",
+            "type": "type",
+            "answer": "89"
+        },
+        {
+            "id": 29,
+            "question": "If log⁡2(log⁡3(log⁡4x))=log⁡3(log⁡4(log⁡2y))=log⁡4(log⁡2(log⁡3z))=0\\log_2(\\log_3(\\log_4x)) = \\log_3(\\log_4(\\log_2y)) = \\log_4(\\log_2(\\log_3z)) = 0log2​(log3​(log4​x))=log3​(log4​(log2​y))=log4​(log2​(",
+            "type": "type",
+            "answer": "89"
+        },
+        {
+            "id": 30,
+            "question": "If log⁡2(log⁡3(log⁡4x))=log⁡3(log⁡4(log⁡2y))=log⁡4(log⁡2(log⁡3z))=0\\log_2(\\log_3(\\log_4x)) = \\log_3(\\log_4(\\log_2y)) = \\log_4(\\log_2(\\log_3z)) = 0log2​(log3​(log4​x))=log3​(log4​(log2​y))=log4​(log2​(",
+            "type": "type",
+            "answer": "89"
+        },
+        {
+            "id": 31,
+            "question": "If log⁡2(log⁡3(log⁡4x))=log⁡3(log⁡4(log⁡2y))=log⁡4(log⁡2(log⁡3z))=0\\log_2(\\log_3(\\log_4x)) = \\log_3(\\log_4(\\log_2y)) = \\log_4(\\log_2(\\log_3z)) = 0log2​(log3​(log4​x))=log3​(log4​(log2​y))=log4​(log2​(",
+            "type": "type",
+            "answer": "89"
+        },
+        {
+            "id": 32,
+            "question": "If log⁡aN=(log⁡bN)×P\\log_{a}N = (\\log_{b}N) \\times Ploga​N=(logb​N)×P ,then find PPP in terms of aaa and bbb :",
+            "type": "mcq",
+            "answer": "B"
+        },
+        {
+            "id": 33,
+            "question": "If log⁡2(log⁡3(log⁡4x))=log⁡3(log⁡4(log⁡2y))=log⁡4(log⁡2(log⁡3z))=0\\log_2(\\log_3(\\log_4x)) = \\log_3(\\log_4(\\log_2y)) = \\log_4(\\log_2(\\log_3z)) = 0log2​(log3​(log4​x))=log3​(log4​(log2​y))=log4​(log2​(",
+            "type": "type",
+            "answer": "89"
+        },
+        {
+            "id": 34,
+            "question": "If log⁡2(log⁡3(log⁡4x))=log⁡3(log⁡4(log⁡2y))=log⁡4(log⁡2(log⁡3z))=0\\log_2(\\log_3(\\log_4x)) = \\log_3(\\log_4(\\log_2y)) = \\log_4(\\log_2(\\log_3z)) = 0log2​(log3​(log4​x))=log3​(log4​(log2​y))=log4​(log2​(",
+            "type": "type",
+            "answer": "89"
+        },
+        {
+            "id": 35,
+            "question": "If xxx satisfies log⁡2(3x2)+log⁡2(32x)=log⁡2(324)\\log_2(3^{x^2}) + \\log_2(3^{2x}) = \\log_2(3^{24})log2​(3x2)+log2​(32x)=log2​(324), find the sum of all possible values of xxx.",
+            "type": "mcq",
+            "answer": "A"
+        },
+        {
+            "id": 36,
+            "question": "If log⁡2(log⁡3(log⁡4x))=log⁡3(log⁡4(log⁡2y))=log⁡4(log⁡2(log⁡3z))=0\\log_2(\\log_3(\\log_4x)) = \\log_3(\\log_4(\\log_2y)) = \\log_4(\\log_2(\\log_3z)) = 0log2​(log3​(log4​x))=log3​(log4​(log2​y))=log4​(log2​(",
+            "type": "type",
+            "answer": "89"
+        },
+        {
+            "id": 37,
+            "question": "If log⁡2(log⁡3(log⁡4x))=log⁡3(log⁡4(log⁡2y))=log⁡4(log⁡2(log⁡3z))=0\\log_2(\\log_3(\\log_4x)) = \\log_3(\\log_4(\\log_2y)) = \\log_4(\\log_2(\\log_3z)) = 0log2​(log3​(log4​x))=log3​(log4​(log2​y))=log4​(log2​(",
+            "type": "type",
+            "answer": "89"
+        },
+        {
+            "id": 38,
+            "question": "If log⁡2(log⁡3(log⁡4x))=log⁡3(log⁡4(log⁡2y))=log⁡4(log⁡2(log⁡3z))=0\\log_2(\\log_3(\\log_4x)) = \\log_3(\\log_4(\\log_2y)) = \\log_4(\\log_2(\\log_3z)) = 0log2​(log3​(log4​x))=log3​(log4​(log2​y))=log4​(log2​(",
+            "type": "type",
+            "answer": "89"
+        },
+        {
+            "id": 39,
+            "question": "If log⁡2(log⁡3(log⁡4x))=log⁡3(log⁡4(log⁡2y))=log⁡4(log⁡2(log⁡3z))=0\\log_2(\\log_3(\\log_4x)) = \\log_3(\\log_4(\\log_2y)) = \\log_4(\\log_2(\\log_3z)) = 0log2​(log3​(log4​x))=log3​(log4​(log2​y))=log4​(log2​(",
+            "type": "type",
+            "answer": "89"
+        },
+        {
+            "id": 40,
+            "question": "If log⁡2(log⁡3(log⁡4x))=log⁡3(log⁡4(log⁡2y))=log⁡4(log⁡2(log⁡3z))=0\\log_2(\\log_3(\\log_4x)) = \\log_3(\\log_4(\\log_2y)) = \\log_4(\\log_2(\\log_3z)) = 0log2​(log3​(log4​x))=log3​(log4​(log2​y))=log4​(log2​(",
+            "type": "type",
+            "answer": "89"
+        },
+        {
+            "id": 41,
+            "question": "If log⁡2(log⁡3(log⁡4x))=log⁡3(log⁡4(log⁡2y))=log⁡4(log⁡2(log⁡3z))=0\\log_2(\\log_3(\\log_4x)) = \\log_3(\\log_4(\\log_2y)) = \\log_4(\\log_2(\\log_3z)) = 0log2​(log3​(log4​x))=log3​(log4​(log2​y))=log4​(log2​(",
+            "type": "type",
+            "answer": "89"
+        },
+        {
+            "id": 42,
+            "question": "If log⁡2(log⁡3(log⁡4x))=log⁡3(log⁡4(log⁡2y))=log⁡4(log⁡2(log⁡3z))=0\\log_2(\\log_3(\\log_4x)) = \\log_3(\\log_4(\\log_2y)) = \\log_4(\\log_2(\\log_3z)) = 0log2​(log3​(log4​x))=log3​(log4​(log2​y))=log4​(log2​(",
+            "type": "type",
+            "answer": "89"
+        },
+        {
+            "id": 43,
+            "question": "If log⁡2(log⁡3(log⁡4x))=log⁡3(log⁡4(log⁡2y))=log⁡4(log⁡2(log⁡3z))=0\\log_2(\\log_3(\\log_4x)) = \\log_3(\\log_4(\\log_2y)) = \\log_4(\\log_2(\\log_3z)) = 0log2​(log3​(log4​x))=log3​(log4​(log2​y))=log4​(log2​(",
+            "type": "type",
+            "answer": "89"
+        },
+        {
+            "id": 44,
+            "question": "If log⁡2(log⁡3(log⁡4x))=log⁡3(log⁡4(log⁡2y))=log⁡4(log⁡2(log⁡3z))=0\\log_2(\\log_3(\\log_4x)) = \\log_3(\\log_4(\\log_2y)) = \\log_4(\\log_2(\\log_3z)) = 0log2​(log3​(log4​x))=log3​(log4​(log2​y))=log4​(log2​(",
+            "type": "type",
+            "answer": "89"
+        },
+        {
+            "id": 45,
+            "question": "If log⁡2(log⁡3(log⁡4x))=log⁡3(log⁡4(log⁡2y))=log⁡4(log⁡2(log⁡3z))=0\\log_2(\\log_3(\\log_4x)) = \\log_3(\\log_4(\\log_2y)) = \\log_4(\\log_2(\\log_3z)) = 0log2​(log3​(log4​x))=log3​(log4​(log2​y))=log4​(log2​(",
+            "type": "type",
+            "answer": "89"
+        },
+        {
+            "id": 46,
+            "question": "If log⁡2(log⁡3(log⁡4x))=log⁡3(log⁡4(log⁡2y))=log⁡4(log⁡2(log⁡3z))=0\\log_2(\\log_3(\\log_4x)) = \\log_3(\\log_4(\\log_2y)) = \\log_4(\\log_2(\\log_3z)) = 0log2​(log3​(log4​x))=log3​(log4​(log2​y))=log4​(log2​(",
+            "type": "type",
+            "answer": "89"
+        },
+        {
+            "id": 47,
+            "question": "If log⁡2(log⁡3(log⁡4x))=log⁡3(log⁡4(log⁡2y))=log⁡4(log⁡2(log⁡3z))=0\\log_2(\\log_3(\\log_4x)) = \\log_3(\\log_4(\\log_2y)) = \\log_4(\\log_2(\\log_3z)) = 0log2​(log3​(log4​x))=log3​(log4​(log2​y))=log4​(log2​(",
+            "type": "type",
+            "answer": "89"
+        },
+        {
+            "id": 48,
+            "question": "If log⁡2(log⁡3(log⁡4x))=log⁡3(log⁡4(log⁡2y))=log⁡4(log⁡2(log⁡3z))=0\\log_2(\\log_3(\\log_4x)) = \\log_3(\\log_4(\\log_2y)) = \\log_4(\\log_2(\\log_3z)) = 0log2​(log3​(log4​x))=log3​(log4​(log2​y))=log4​(log2​(",
+            "type": "type",
+            "answer": "89"
+        },
+        {
+            "id": 49,
+            "question": "If log⁡2(log⁡3(log⁡4x))=log⁡3(log⁡4(log⁡2y))=log⁡4(log⁡2(log⁡3z))=0\\log_2(\\log_3(\\log_4x)) = \\log_3(\\log_4(\\log_2y)) = \\log_4(\\log_2(\\log_3z)) = 0log2​(log3​(log4​x))=log3​(log4​(log2​y))=log4​(log2​(",
+            "type": "type",
+            "answer": "89"
+        },
+        {
+            "id": 50,
+            "question": "If log⁡2(log⁡3(log⁡4x))=log⁡3(log⁡4(log⁡2y))=log⁡4(log⁡2(log⁡3z))=0\\log_2(\\log_3(\\log_4x)) = \\log_3(\\log_4(\\log_2y)) = \\log_4(\\log_2(\\log_3z)) = 0log2​(log3​(log4​x))=log3​(log4​(log2​y))=log4​(log2​(",
+            "type": "type",
+            "answer": "89"
+        },
+        {
+            "id": 51,
+            "question": "If log⁡2(log⁡3(log⁡4x))=log⁡3(log⁡4(log⁡2y))=log⁡4(log⁡2(log⁡3z))=0\\log_2(\\log_3(\\log_4x)) = \\log_3(\\log_4(\\log_2y)) = \\log_4(\\log_2(\\log_3z)) = 0log2​(log3​(log4​x))=log3​(log4​(log2​y))=log4​(log2​(",
+            "type": "type",
+            "answer": "89"
+        },
+        {
+            "id": 52,
+            "question": "If log⁡2(log⁡3(log⁡4x))=log⁡3(log⁡4(log⁡2y))=log⁡4(log⁡2(log⁡3z))=0\\log_2(\\log_3(\\log_4x)) = \\log_3(\\log_4(\\log_2y)) = \\log_4(\\log_2(\\log_3z)) = 0log2​(log3​(log4​x))=log3​(log4​(log2​y))=log4​(log2​(",
+            "type": "type",
+            "answer": "89"
+        },
+        {
+            "id": 53,
+            "question": "If log⁡2(log⁡3(log⁡4x))=log⁡3(log⁡4(log⁡2y))=log⁡4(log⁡2(log⁡3z))=0\\log_2(\\log_3(\\log_4x)) = \\log_3(\\log_4(\\log_2y)) = \\log_4(\\log_2(\\log_3z)) = 0log2​(log3​(log4​x))=log3​(log4​(log2​y))=log4​(log2​(",
+            "type": "type",
+            "answer": "89"
+        },
+        {
+            "id": 54,
+            "question": "If log⁡2(log⁡3(log⁡4x))=log⁡3(log⁡4(log⁡2y))=log⁡4(log⁡2(log⁡3z))=0\\log_2(\\log_3(\\log_4x)) = \\log_3(\\log_4(\\log_2y)) = \\log_4(\\log_2(\\log_3z)) = 0log2​(log3​(log4​x))=log3​(log4​(log2​y))=log4​(log2​(",
+            "type": "type",
+            "answer": "89"
+        },
+        {
+            "id": 55,
+            "question": "If log⁡2(log⁡3(log⁡4x))=log⁡3(log⁡4(log⁡2y))=log⁡4(log⁡2(log⁡3z))=0\\log_2(\\log_3(\\log_4x)) = \\log_3(\\log_4(\\log_2y)) = \\log_4(\\log_2(\\log_3z)) = 0log2​(log3​(log4​x))=log3​(log4​(log2​y))=log4​(log2​(",
+            "type": "type",
+            "answer": "89"
+        },
+        {
+            "id": 56,
+            "question": "If log⁡2(log⁡3(log⁡4x))=log⁡3(log⁡4(log⁡2y))=log⁡4(log⁡2(log⁡3z))=0\\log_2(\\log_3(\\log_4x)) = \\log_3(\\log_4(\\log_2y)) = \\log_4(\\log_2(\\log_3z)) = 0log2​(log3​(log4​x))=log3​(log4​(log2​y))=log4​(log2​(",
+            "type": "type",
+            "answer": "89"
+        },
+        {
+            "id": 57,
+            "question": "If log⁡2(log⁡3(log⁡4x))=log⁡3(log⁡4(log⁡2y))=log⁡4(log⁡2(log⁡3z))=0\\log_2(\\log_3(\\log_4x)) = \\log_3(\\log_4(\\log_2y)) = \\log_4(\\log_2(\\log_3z)) = 0log2​(log3​(log4​x))=log3​(log4​(log2​y))=log4​(log2​(",
+            "type": "type",
+            "answer": "89"
+        },
+        {
+            "id": 58,
+            "question": "If log⁡2(log⁡3(log⁡4x))=log⁡3(log⁡4(log⁡2y))=log⁡4(log⁡2(log⁡3z))=0\\log_2(\\log_3(\\log_4x)) = \\log_3(\\log_4(\\log_2y)) = \\log_4(\\log_2(\\log_3z)) = 0log2​(log3​(log4​x))=log3​(log4​(log2​y))=log4​(log2​(",
+            "type": "type",
+            "answer": "89"
+        },
+        {
+            "id": 59,
+            "question": "If log⁡2(log⁡3(log⁡4x))=log⁡3(log⁡4(log⁡2y))=log⁡4(log⁡2(log⁡3z))=0\\log_2(\\log_3(\\log_4x)) = \\log_3(\\log_4(\\log_2y)) = \\log_4(\\log_2(\\log_3z)) = 0log2​(log3​(log4​x))=log3​(log4​(log2​y))=log4​(log2​(",
+            "type": "type",
+            "answer": "89"
+        },
+        {
+            "id": 60,
+            "question": "If log⁡2(log⁡3(log⁡4x))=log⁡3(log⁡4(log⁡2y))=log⁡4(log⁡2(log⁡3z))=0\\log_2(\\log_3(\\log_4x)) = \\log_3(\\log_4(\\log_2y)) = \\log_4(\\log_2(\\log_3z)) = 0log2​(log3​(log4​x))=log3​(log4​(log2​y))=log4​(log2​(",
+            "type": "type",
+            "answer": "89"
+        },
+        {
+            "id": 61,
+            "question": "If log⁡2(log⁡3(log⁡4x))=log⁡3(log⁡4(log⁡2y))=log⁡4(log⁡2(log⁡3z))=0\\log_2(\\log_3(\\log_4x)) = \\log_3(\\log_4(\\log_2y)) = \\log_4(\\log_2(\\log_3z)) = 0log2​(log3​(log4​x))=log3​(log4​(log2​y))=log4​(log2​(",
+            "type": "type",
+            "answer": "89"
+        },
+        {
+            "id": 62,
+            "question": "If log⁡2(log⁡3(log⁡4x))=log⁡3(log⁡4(log⁡2y))=log⁡4(log⁡2(log⁡3z))=0\\log_2(\\log_3(\\log_4x)) = \\log_3(\\log_4(\\log_2y)) = \\log_4(\\log_2(\\log_3z)) = 0log2​(log3​(log4​x))=log3​(log4​(log2​y))=log4​(log2​(",
+            "type": "type",
+            "answer": "89"
+        },
+        {
+            "id": 63,
+            "question": "If log⁡2(log⁡3(log⁡4x))=log⁡3(log⁡4(log⁡2y))=log⁡4(log⁡2(log⁡3z))=0\\log_2(\\log_3(\\log_4x)) = \\log_3(\\log_4(\\log_2y)) = \\log_4(\\log_2(\\log_3z)) = 0log2​(log3​(log4​x))=log3​(log4​(log2​y))=log4​(log2​(",
+            "type": "type",
+            "answer": "89"
+        },
+        {
+            "id": 64,
+            "question": "If log⁡2(log⁡3(log⁡4x))=log⁡3(log⁡4(log⁡2y))=log⁡4(log⁡2(log⁡3z))=0\\log_2(\\log_3(\\log_4x)) = \\log_3(\\log_4(\\log_2y)) = \\log_4(\\log_2(\\log_3z)) = 0log2​(log3​(log4​x))=log3​(log4​(log2​y))=log4​(log2​(",
+            "type": "type",
+            "answer": "89"
+        },
+        {
+            "id": 65,
+            "question": "If log⁡2(log⁡3(log⁡4x))=log⁡3(log⁡4(log⁡2y))=log⁡4(log⁡2(log⁡3z))=0\\log_2(\\log_3(\\log_4x)) = \\log_3(\\log_4(\\log_2y)) = \\log_4(\\log_2(\\log_3z)) = 0log2​(log3​(log4​x))=log3​(log4​(log2​y))=log4​(log2​(",
+            "type": "type",
+            "answer": "89"
+        },
+        {
+            "id": 66,
+            "question": "If log⁡2(log⁡3(log⁡4x))=log⁡3(log⁡4(log⁡2y))=log⁡4(log⁡2(log⁡3z))=0\\log_2(\\log_3(\\log_4x)) = \\log_3(\\log_4(\\log_2y)) = \\log_4(\\log_2(\\log_3z)) = 0log2​(log3​(log4​x))=log3​(log4​(log2​y))=log4​(log2​(",
+            "type": "type",
+            "answer": "89"
+        },
+        {
+            "id": 67,
+            "question": "If log⁡2(log⁡3(log⁡4x))=log⁡3(log⁡4(log⁡2y))=log⁡4(log⁡2(log⁡3z))=0\\log_2(\\log_3(\\log_4x)) = \\log_3(\\log_4(\\log_2y)) = \\log_4(\\log_2(\\log_3z)) = 0log2​(log3​(log4​x))=log3​(log4​(log2​y))=log4​(log2​(",
+            "type": "type",
+            "answer": "89"
+        },
+        {
+            "id": 68,
+            "question": "If log⁡2(log⁡3(log⁡4x))=log⁡3(log⁡4(log⁡2y))=log⁡4(log⁡2(log⁡3z))=0\\log_2(\\log_3(\\log_4x)) = \\log_3(\\log_4(\\log_2y)) = \\log_4(\\log_2(\\log_3z)) = 0log2​(log3​(log4​x))=log3​(log4​(log2​y))=log4​(log2​(",
+            "type": "type",
+            "answer": "89"
+        },
+        {
+            "id": 69,
+            "question": "If log⁡2(log⁡3(log⁡4x))=log⁡3(log⁡4(log⁡2y))=log⁡4(log⁡2(log⁡3z))=0\\log_2(\\log_3(\\log_4x)) = \\log_3(\\log_4(\\log_2y)) = \\log_4(\\log_2(\\log_3z)) = 0log2​(log3​(log4​x))=log3​(log4​(log2​y))=log4​(log2​(",
+            "type": "type",
+            "answer": "89"
+        },
+        {
+            "id": 70,
+            "question": "If log⁡2(log⁡3(log⁡4x))=log⁡3(log⁡4(log⁡2y))=log⁡4(log⁡2(log⁡3z))=0\\log_2(\\log_3(\\log_4x)) = \\log_3(\\log_4(\\log_2y)) = \\log_4(\\log_2(\\log_3z)) = 0log2​(log3​(log4​x))=log3​(log4​(log2​y))=log4​(log2​(",
+            "type": "type",
+            "answer": "89"
+        },
+        {
+            "id": 71,
+            "question": "If log⁡2(log⁡3(log⁡4x))=log⁡3(log⁡4(log⁡2y))=log⁡4(log⁡2(log⁡3z))=0\\log_2(\\log_3(\\log_4x)) = \\log_3(\\log_4(\\log_2y)) = \\log_4(\\log_2(\\log_3z)) = 0log2​(log3​(log4​x))=log3​(log4​(log2​y))=log4​(log2​(",
+            "type": "type",
+            "answer": "89"
+        },
+        {
+            "id": 72,
+            "question": "If log⁡2(log⁡3(log⁡4x))=log⁡3(log⁡4(log⁡2y))=log⁡4(log⁡2(log⁡3z))=0\\log_2(\\log_3(\\log_4x)) = \\log_3(\\log_4(\\log_2y)) = \\log_4(\\log_2(\\log_3z)) = 0log2​(log3​(log4​x))=log3​(log4​(log2​y))=log4​(log2​(",
+            "type": "type",
+            "answer": "89"
+        },
+        {
+            "id": 73,
+            "question": "If log⁡2(log⁡3(log⁡4x))=log⁡3(log⁡4(log⁡2y))=log⁡4(log⁡2(log⁡3z))=0\\log_2(\\log_3(\\log_4x)) = \\log_3(\\log_4(\\log_2y)) = \\log_4(\\log_2(\\log_3z)) = 0log2​(log3​(log4​x))=log3​(log4​(log2​y))=log4​(log2​(",
+            "type": "type",
+            "answer": "89"
+        },
+        {
+            "id": 74,
+            "question": "If log⁡2(log⁡3(log⁡4x))=log⁡3(log⁡4(log⁡2y))=log⁡4(log⁡2(log⁡3z))=0\\log_2(\\log_3(\\log_4x)) = \\log_3(\\log_4(\\log_2y)) = \\log_4(\\log_2(\\log_3z)) = 0log2​(log3​(log4​x))=log3​(log4​(log2​y))=log4​(log2​(",
+            "type": "type",
+            "answer": "89"
+        },
+        {
+            "id": 75,
+            "question": "If log⁡2(log⁡3(log⁡4x))=log⁡3(log⁡4(log⁡2y))=log⁡4(log⁡2(log⁡3z))=0\\log_2(\\log_3(\\log_4x)) = \\log_3(\\log_4(\\log_2y)) = \\log_4(\\log_2(\\log_3z)) = 0log2​(log3​(log4​x))=log3​(log4​(log2​y))=log4​(log2​(",
+            "type": "type",
+            "answer": "89"
+        },
+        {
+            "id": 76,
+            "question": "If log⁡2(log⁡3(log⁡4x))=log⁡3(log⁡4(log⁡2y))=log⁡4(log⁡2(log⁡3z))=0\\log_2(\\log_3(\\log_4x)) = \\log_3(\\log_4(\\log_2y)) = \\log_4(\\log_2(\\log_3z)) = 0log2​(log3​(log4​x))=log3​(log4​(log2​y))=log4​(log2​(",
+            "type": "type",
+            "answer": "89"
+        },
+        {
+            "id": 77,
+            "question": "If log⁡2(log⁡3(log⁡4x))=log⁡3(log⁡4(log⁡2y))=log⁡4(log⁡2(log⁡3z))=0\\log_2(\\log_3(\\log_4x)) = \\log_3(\\log_4(\\log_2y)) = \\log_4(\\log_2(\\log_3z)) = 0log2​(log3​(log4​x))=log3​(log4​(log2​y))=log4​(log2​(",
+            "type": "type",
+            "answer": "89"
+        },
+        {
+            "id": 78,
+            "question": "If log⁡2(log⁡3(log⁡4x))=log⁡3(log⁡4(log⁡2y))=log⁡4(log⁡2(log⁡3z))=0\\log_2(\\log_3(\\log_4x)) = \\log_3(\\log_4(\\log_2y)) = \\log_4(\\log_2(\\log_3z)) = 0log2​(log3​(log4​x))=log3​(log4​(log2​y))=log4​(log2​(",
+            "type": "type",
+            "answer": "89"
+        },
+        {
+            "id": 79,
+            "question": "If log⁡2(log⁡3(log⁡4x))=log⁡3(log⁡4(log⁡2y))=log⁡4(log⁡2(log⁡3z))=0\\log_2(\\log_3(\\log_4x)) = \\log_3(\\log_4(\\log_2y)) = \\log_4(\\log_2(\\log_3z)) = 0log2​(log3​(log4​x))=log3​(log4​(log2​y))=log4​(log2​(",
+            "type": "type",
+            "answer": "89"
+        },
+        {
+            "id": 80,
+            "question": "If log⁡2(log⁡3(log⁡4x))=log⁡3(log⁡4(log⁡2y))=log⁡4(log⁡2(log⁡3z))=0\\log_2(\\log_3(\\log_4x)) = \\log_3(\\log_4(\\log_2y)) = \\log_4(\\log_2(\\log_3z)) = 0log2​(log3​(log4​x))=log3​(log4​(log2​y))=log4​(log2​(",
+            "type": "type",
+            "answer": "89"
+        },
+        {
+            "id": 81,
+            "question": "If log⁡2(log⁡3(log⁡4x))=log⁡3(log⁡4(log⁡2y))=log⁡4(log⁡2(log⁡3z))=0\\log_2(\\log_3(\\log_4x)) = \\log_3(\\log_4(\\log_2y)) = \\log_4(\\log_2(\\log_3z)) = 0log2​(log3​(log4​x))=log3​(log4​(log2​y))=log4​(log2​(",
+            "type": "type",
+            "answer": "89"
+        },
+        {
+            "id": 82,
+            "question": "If log⁡2(log⁡3(log⁡4x))=log⁡3(log⁡4(log⁡2y))=log⁡4(log⁡2(log⁡3z))=0\\log_2(\\log_3(\\log_4x)) = \\log_3(\\log_4(\\log_2y)) = \\log_4(\\log_2(\\log_3z)) = 0log2​(log3​(log4​x))=log3​(log4​(log2​y))=log4​(log2​(",
+            "type": "type",
+            "answer": "89"
+        },
+        {
+            "id": 83,
+            "question": "If log⁡2(log⁡3(log⁡4x))=log⁡3(log⁡4(log⁡2y))=log⁡4(log⁡2(log⁡3z))=0\\log_2(\\log_3(\\log_4x)) = \\log_3(\\log_4(\\log_2y)) = \\log_4(\\log_2(\\log_3z)) = 0log2​(log3​(log4​x))=log3​(log4​(log2​y))=log4​(log2​(",
+            "type": "type",
+            "answer": "89"
+        },
+        {
+            "id": 84,
+            "question": "",
+            "type": "type",
+            "answer": "1"
+        },
+        {
+            "id": 85,
+            "question": "If log⁡2(log⁡3(log⁡4x))=log⁡3(log⁡4(log⁡2y))=log⁡4(log⁡2(log⁡3z))=0\\log_2(\\log_3(\\log_4x)) = \\log_3(\\log_4(\\log_2y)) = \\log_4(\\log_2(\\log_3z)) = 0log2​(log3​(log4​x))=log3​(log4​(log2​y))=log4​(log2​(",
+            "type": "type",
+            "answer": "89"
+        },
+        {
+            "id": 86,
+            "question": "If log⁡2(log⁡3(log⁡4x))=log⁡3(log⁡4(log⁡2y))=log⁡4(log⁡2(log⁡3z))=0\\log_2(\\log_3(\\log_4x)) = \\log_3(\\log_4(\\log_2y)) = \\log_4(\\log_2(\\log_3z)) = 0log2​(log3​(log4​x))=log3​(log4​(log2​y))=log4​(log2​(",
+            "type": "type",
+            "answer": "89"
+        },
+        {
+            "id": 87,
+            "question": "If log⁡2(log⁡3(log⁡4x))=log⁡3(log⁡4(log⁡2y))=log⁡4(log⁡2(log⁡3z))=0\\log_2(\\log_3(\\log_4x)) = \\log_3(\\log_4(\\log_2y)) = \\log_4(\\log_2(\\log_3z)) = 0log2​(log3​(log4​x))=log3​(log4​(log2​y))=log4​(log2​(",
+            "type": "type",
+            "answer": "89"
+        },
+        {
+            "id": 88,
+            "question": "If log⁡2(log⁡3(log⁡4x))=log⁡3(log⁡4(log⁡2y))=log⁡4(log⁡2(log⁡3z))=0\\log_2(\\log_3(\\log_4x)) = \\log_3(\\log_4(\\log_2y)) = \\log_4(\\log_2(\\log_3z)) = 0log2​(log3​(log4​x))=log3​(log4​(log2​y))=log4​(log2​(",
+            "type": "type",
+            "answer": "89"
+        },
+        {
+            "id": 89,
+            "question": "If log⁡2(log⁡3(log⁡4x))=log⁡3(log⁡4(log⁡2y))=log⁡4(log⁡2(log⁡3z))=0\\log_2(\\log_3(\\log_4x)) = \\log_3(\\log_4(\\log_2y)) = \\log_4(\\log_2(\\log_3z)) = 0log2​(log3​(log4​x))=log3​(log4​(log2​y))=log4​(log2​(",
+            "type": "type",
+            "answer": "89"
+        },
+        {
+            "id": 90,
+            "question": "If log⁡2(log⁡3(log⁡4x))=log⁡3(log⁡4(log⁡2y))=log⁡4(log⁡2(log⁡3z))=0\\log_2(\\log_3(\\log_4x)) = \\log_3(\\log_4(\\log_2y)) = \\log_4(\\log_2(\\log_3z)) = 0log2​(log3​(log4​x))=log3​(log4​(log2​y))=log4​(log2​(",
+            "type": "type",
+            "answer": "89"
+        },
+        {
+            "id": 91,
+            "question": "If log⁡2(log⁡3(log⁡4x))=log⁡3(log⁡4(log⁡2y))=log⁡4(log⁡2(log⁡3z))=0\\log_2(\\log_3(\\log_4x)) = \\log_3(\\log_4(\\log_2y)) = \\log_4(\\log_2(\\log_3z)) = 0log2​(log3​(log4​x))=log3​(log4​(log2​y))=log4​(log2​(",
+            "type": "type",
+            "answer": "89"
+        },
+        {
+            "id": 92,
+            "question": "If log⁡2(log⁡3(log⁡4x))=log⁡3(log⁡4(log⁡2y))=log⁡4(log⁡2(log⁡3z))=0\\log_2(\\log_3(\\log_4x)) = \\log_3(\\log_4(\\log_2y)) = \\log_4(\\log_2(\\log_3z)) = 0log2​(log3​(log4​x))=log3​(log4​(log2​y))=log4​(log2​(",
+            "type": "type",
+            "answer": "89"
+        },
+        {
+            "id": 93,
+            "question": "If log⁡2(log⁡3(log⁡4x))=log⁡3(log⁡4(log⁡2y))=log⁡4(log⁡2(log⁡3z))=0\\log_2(\\log_3(\\log_4x)) = \\log_3(\\log_4(\\log_2y)) = \\log_4(\\log_2(\\log_3z)) = 0log2​(log3​(log4​x))=log3​(log4​(log2​y))=log4​(log2​(",
+            "type": "type",
+            "answer": "89"
+        },
+        {
+            "id": 94,
+            "question": "If log⁡2(log⁡3(log⁡4x))=log⁡3(log⁡4(log⁡2y))=log⁡4(log⁡2(log⁡3z))=0\\log_2(\\log_3(\\log_4x)) = \\log_3(\\log_4(\\log_2y)) = \\log_4(\\log_2(\\log_3z)) = 0log2​(log3​(log4​x))=log3​(log4​(log2​y))=log4​(log2​(",
+            "type": "type",
+            "answer": "89"
+        },
+        {
+            "id": 95,
+            "question": "If log⁡2(log⁡3(log⁡4x))=log⁡3(log⁡4(log⁡2y))=log⁡4(log⁡2(log⁡3z))=0\\log_2(\\log_3(\\log_4x)) = \\log_3(\\log_4(\\log_2y)) = \\log_4(\\log_2(\\log_3z)) = 0log2​(log3​(log4​x))=log3​(log4​(log2​y))=log4​(log2​(",
+            "type": "type",
+            "answer": "89"
+        },
+        {
+            "id": 96,
+            "question": "If log⁡2(log⁡3(log⁡4x))=log⁡3(log⁡4(log⁡2y))=log⁡4(log⁡2(log⁡3z))=0\\log_2(\\log_3(\\log_4x)) = \\log_3(\\log_4(\\log_2y)) = \\log_4(\\log_2(\\log_3z)) = 0log2​(log3​(log4​x))=log3​(log4​(log2​y))=log4​(log2​(",
+            "type": "type",
+            "answer": "89"
+        },
+        {
+            "id": 97,
+            "question": "If log⁡2(log⁡3(log⁡4x))=log⁡3(log⁡4(log⁡2y))=log⁡4(log⁡2(log⁡3z))=0\\log_2(\\log_3(\\log_4x)) = \\log_3(\\log_4(\\log_2y)) = \\log_4(\\log_2(\\log_3z)) = 0log2​(log3​(log4​x))=log3​(log4​(log2​y))=log4​(log2​(",
+            "type": "type",
+            "answer": "89"
+        },
+        {
+            "id": 98,
+            "question": "If log⁡2(log⁡3(log⁡4x))=log⁡3(log⁡4(log⁡2y))=log⁡4(log⁡2(log⁡3z))=0\\log_2(\\log_3(\\log_4x)) = \\log_3(\\log_4(\\log_2y)) = \\log_4(\\log_2(\\log_3z)) = 0log2​(log3​(log4​x))=log3​(log4​(log2​y))=log4​(log2​(",
+            "type": "type",
+            "answer": "89"
+        },
+        {
+            "id": 99,
+            "question": "If log⁡2(log⁡3(log⁡4x))=log⁡3(log⁡4(log⁡2y))=log⁡4(log⁡2(log⁡3z))=0\\log_2(\\log_3(\\log_4x)) = \\log_3(\\log_4(\\log_2y)) = \\log_4(\\log_2(\\log_3z)) = 0log2​(log3​(log4​x))=log3​(log4​(log2​y))=log4​(log2​(",
+            "type": "type",
+            "answer": "89"
+        },
+        {
+            "id": 100,
+            "question": "If log⁡2(log⁡3(log⁡4x))=log⁡3(log⁡4(log⁡2y))=log⁡4(log⁡2(log⁡3z))=0\\log_2(\\log_3(\\log_4x)) = \\log_3(\\log_4(\\log_2y)) = \\log_4(\\log_2(\\log_3z)) = 0log2​(log3​(log4​x))=log3​(log4​(log2​y))=log4​(log2​(",
+            "type": "type",
+            "answer": "89"
+        },
+        {
+            "id": 101,
+            "question": "If log⁡2(log⁡3(log⁡4x))=log⁡3(log⁡4(log⁡2y))=log⁡4(log⁡2(log⁡3z))=0\\log_2(\\log_3(\\log_4x)) = \\log_3(\\log_4(\\log_2y)) = \\log_4(\\log_2(\\log_3z)) = 0log2​(log3​(log4​x))=log3​(log4​(log2​y))=log4​(log2​(",
+            "type": "type",
+            "answer": "89"
+        },
+        {
+            "id": 102,
+            "question": "If log⁡2(log⁡3(log⁡4x))=log⁡3(log⁡4(log⁡2y))=log⁡4(log⁡2(log⁡3z))=0\\log_2(\\log_3(\\log_4x)) = \\log_3(\\log_4(\\log_2y)) = \\log_4(\\log_2(\\log_3z)) = 0log2​(log3​(log4​x))=log3​(log4​(log2​y))=log4​(log2​(",
+            "type": "type",
+            "answer": "89"
+        },
+        {
+            "id": 103,
+            "question": "If log⁡2(log⁡3(log⁡4x))=log⁡3(log⁡4(log⁡2y))=log⁡4(log⁡2(log⁡3z))=0\\log_2(\\log_3(\\log_4x)) = \\log_3(\\log_4(\\log_2y)) = \\log_4(\\log_2(\\log_3z)) = 0log2​(log3​(log4​x))=log3​(log4​(log2​y))=log4​(log2​(",
+            "type": "type",
+            "answer": "89"
+        },
+        {
+            "id": 104,
+            "question": "If log⁡2(log⁡3(log⁡4x))=log⁡3(log⁡4(log⁡2y))=log⁡4(log⁡2(log⁡3z))=0\\log_2(\\log_3(\\log_4x)) = \\log_3(\\log_4(\\log_2y)) = \\log_4(\\log_2(\\log_3z)) = 0log2​(log3​(log4​x))=log3​(log4​(log2​y))=log4​(log2​(",
+            "type": "type",
+            "answer": "89"
+        },
+        {
+            "id": 105,
+            "question": "If log⁡2(log⁡3(log⁡4x))=log⁡3(log⁡4(log⁡2y))=log⁡4(log⁡2(log⁡3z))=0\\log_2(\\log_3(\\log_4x)) = \\log_3(\\log_4(\\log_2y)) = \\log_4(\\log_2(\\log_3z)) = 0log2​(log3​(log4​x))=log3​(log4​(log2​y))=log4​(log2​(",
+            "type": "type",
+            "answer": "89"
+        },
+        {
+            "id": 106,
+            "question": "If log⁡2(log⁡3(log⁡4x))=log⁡3(log⁡4(log⁡2y))=log⁡4(log⁡2(log⁡3z))=0\\log_2(\\log_3(\\log_4x)) = \\log_3(\\log_4(\\log_2y)) = \\log_4(\\log_2(\\log_3z)) = 0log2​(log3​(log4​x))=log3​(log4​(log2​y))=log4​(log2​(",
+            "type": "type",
+            "answer": "89"
+        },
+        {
+            "id": 107,
+            "question": "If log⁡2(log⁡3(log⁡4x))=log⁡3(log⁡4(log⁡2y))=log⁡4(log⁡2(log⁡3z))=0\\log_2(\\log_3(\\log_4x)) = \\log_3(\\log_4(\\log_2y)) = \\log_4(\\log_2(\\log_3z)) = 0log2​(log3​(log4​x))=log3​(log4​(log2​y))=log4​(log2​(",
+            "type": "type",
+            "answer": "89"
+        },
+        {
+            "id": 108,
+            "question": "If log⁡2(log⁡3(log⁡4x))=log⁡3(log⁡4(log⁡2y))=log⁡4(log⁡2(log⁡3z))=0\\log_2(\\log_3(\\log_4x)) = \\log_3(\\log_4(\\log_2y)) = \\log_4(\\log_2(\\log_3z)) = 0log2​(log3​(log4​x))=log3​(log4​(log2​y))=log4​(log2​(",
+            "type": "type",
+            "answer": "89"
+        },
+        {
+            "id": 109,
+            "question": "If log⁡2(log⁡3(log⁡4x))=log⁡3(log⁡4(log⁡2y))=log⁡4(log⁡2(log⁡3z))=0\\log_2(\\log_3(\\log_4x)) = \\log_3(\\log_4(\\log_2y)) = \\log_4(\\log_2(\\log_3z)) = 0log2​(log3​(log4​x))=log3​(log4​(log2​y))=log4​(log2​(",
+            "type": "type",
+            "answer": "89"
+        },
+        {
+            "id": 110,
+            "question": "If log⁡2(log⁡3(log⁡4x))=log⁡3(log⁡4(log⁡2y))=log⁡4(log⁡2(log⁡3z))=0\\log_2(\\log_3(\\log_4x)) = \\log_3(\\log_4(\\log_2y)) = \\log_4(\\log_2(\\log_3z)) = 0log2​(log3​(log4​x))=log3​(log4​(log2​y))=log4​(log2​(",
+            "type": "type",
+            "answer": "89"
+        },
+        {
+            "id": 111,
+            "question": "If log⁡2(log⁡3(log⁡4x))=log⁡3(log⁡4(log⁡2y))=log⁡4(log⁡2(log⁡3z))=0\\log_2(\\log_3(\\log_4x)) = \\log_3(\\log_4(\\log_2y)) = \\log_4(\\log_2(\\log_3z)) = 0log2​(log3​(log4​x))=log3​(log4​(log2​y))=log4​(log2​(",
+            "type": "type",
+            "answer": "89"
+        },
+        {
+            "id": 112,
+            "question": "If log⁡2(log⁡3(log⁡4x))=log⁡3(log⁡4(log⁡2y))=log⁡4(log⁡2(log⁡3z))=0\\log_2(\\log_3(\\log_4x)) = \\log_3(\\log_4(\\log_2y)) = \\log_4(\\log_2(\\log_3z)) = 0log2​(log3​(log4​x))=log3​(log4​(log2​y))=log4​(log2​(",
+            "type": "type",
+            "answer": "89"
+        },
+        {
+            "id": 113,
+            "question": "If log⁡2(log⁡3(log⁡4x))=log⁡3(log⁡4(log⁡2y))=log⁡4(log⁡2(log⁡3z))=0\\log_2(\\log_3(\\log_4x)) = \\log_3(\\log_4(\\log_2y)) = \\log_4(\\log_2(\\log_3z)) = 0log2​(log3​(log4​x))=log3​(log4​(log2​y))=log4​(log2​(",
+            "type": "type",
+            "answer": "89"
+        },
+        {
+            "id": 114,
+            "question": "If log⁡2(log⁡3(log⁡4x))=log⁡3(log⁡4(log⁡2y))=log⁡4(log⁡2(log⁡3z))=0\\log_2(\\log_3(\\log_4x)) = \\log_3(\\log_4(\\log_2y)) = \\log_4(\\log_2(\\log_3z)) = 0log2​(log3​(log4​x))=log3​(log4​(log2​y))=log4​(log2​(",
+            "type": "type",
+            "answer": "89"
+        },
+        {
+            "id": 115,
+            "question": "If log⁡2(log⁡3(log⁡4x))=log⁡3(log⁡4(log⁡2y))=log⁡4(log⁡2(log⁡3z))=0\\log_2(\\log_3(\\log_4x)) = \\log_3(\\log_4(\\log_2y)) = \\log_4(\\log_2(\\log_3z)) = 0log2​(log3​(log4​x))=log3​(log4​(log2​y))=log4​(log2​(",
+            "type": "type",
+            "answer": "89"
+        },
+        {
+            "id": 116,
+            "question": "If log⁡2(log⁡3(log⁡4x))=log⁡3(log⁡4(log⁡2y))=log⁡4(log⁡2(log⁡3z))=0\\log_2(\\log_3(\\log_4x)) = \\log_3(\\log_4(\\log_2y)) = \\log_4(\\log_2(\\log_3z)) = 0log2​(log3​(log4​x))=log3​(log4​(log2​y))=log4​(log2​(",
+            "type": "type",
+            "answer": "89"
+        },
+        {
+            "id": 117,
+            "question": "If log⁡2(log⁡3(log⁡4x))=log⁡3(log⁡4(log⁡2y))=log⁡4(log⁡2(log⁡3z))=0\\log_2(\\log_3(\\log_4x)) = \\log_3(\\log_4(\\log_2y)) = \\log_4(\\log_2(\\log_3z)) = 0log2​(log3​(log4​x))=log3​(log4​(log2​y))=log4​(log2​(",
+            "type": "type",
+            "answer": "89"
+        },
+        {
+            "id": 118,
+            "question": "If log⁡2(log⁡3(log⁡4x))=log⁡3(log⁡4(log⁡2y))=log⁡4(log⁡2(log⁡3z))=0\\log_2(\\log_3(\\log_4x)) = \\log_3(\\log_4(\\log_2y)) = \\log_4(\\log_2(\\log_3z)) = 0log2​(log3​(log4​x))=log3​(log4​(log2​y))=log4​(log2​(",
+            "type": "type",
+            "answer": "89"
+        },
+        {
+            "id": 119,
+            "question": "If log⁡2(log⁡3(log⁡4x))=log⁡3(log⁡4(log⁡2y))=log⁡4(log⁡2(log⁡3z))=0\\log_2(\\log_3(\\log_4x)) = \\log_3(\\log_4(\\log_2y)) = \\log_4(\\log_2(\\log_3z)) = 0log2​(log3​(log4​x))=log3​(log4​(log2​y))=log4​(log2​(",
+            "type": "type",
+            "answer": "89"
+        },
+        {
+            "id": 120,
+            "question": "If log⁡2(log⁡3(log⁡4x))=log⁡3(log⁡4(log⁡2y))=log⁡4(log⁡2(log⁡3z))=0\\log_2(\\log_3(\\log_4x)) = \\log_3(\\log_4(\\log_2y)) = \\log_4(\\log_2(\\log_3z)) = 0log2​(log3​(log4​x))=log3​(log4​(log2​y))=log4​(log2​(",
+            "type": "type",
+            "answer": "89"
+        },
+        {
+            "id": 121,
+            "question": "If log⁡2(log⁡3(log⁡4x))=log⁡3(log⁡4(log⁡2y))=log⁡4(log⁡2(log⁡3z))=0\\log_2(\\log_3(\\log_4x)) = \\log_3(\\log_4(\\log_2y)) = \\log_4(\\log_2(\\log_3z)) = 0log2​(log3​(log4​x))=log3​(log4​(log2​y))=log4​(log2​(",
+            "type": "type",
+            "answer": "89"
+        },
+        {
+            "id": 122,
+            "question": "If log⁡2(log⁡3(log⁡4x))=log⁡3(log⁡4(log⁡2y))=log⁡4(log⁡2(log⁡3z))=0\\log_2(\\log_3(\\log_4x)) = \\log_3(\\log_4(\\log_2y)) = \\log_4(\\log_2(\\log_3z)) = 0log2​(log3​(log4​x))=log3​(log4​(log2​y))=log4​(log2​(",
+            "type": "type",
+            "answer": "89"
+        },
+        {
+            "id": 123,
+            "question": "If log⁡2(log⁡3(log⁡4x))=log⁡3(log⁡4(log⁡2y))=log⁡4(log⁡2(log⁡3z))=0\\log_2(\\log_3(\\log_4x)) = \\log_3(\\log_4(\\log_2y)) = \\log_4(\\log_2(\\log_3z)) = 0log2​(log3​(log4​x))=log3​(log4​(log2​y))=log4​(log2​(",
+            "type": "type",
+            "answer": "89"
+        },
+        {
+            "id": 124,
+            "question": "If log⁡2(log⁡3(log⁡4x))=log⁡3(log⁡4(log⁡2y))=log⁡4(log⁡2(log⁡3z))=0\\log_2(\\log_3(\\log_4x)) = \\log_3(\\log_4(\\log_2y)) = \\log_4(\\log_2(\\log_3z)) = 0log2​(log3​(log4​x))=log3​(log4​(log2​y))=log4​(log2​(",
+            "type": "type",
+            "answer": "89"
+        },
+        {
+            "id": 125,
+            "question": "If log⁡2(log⁡3(log⁡4x))=log⁡3(log⁡4(log⁡2y))=log⁡4(log⁡2(log⁡3z))=0\\log_2(\\log_3(\\log_4x)) = \\log_3(\\log_4(\\log_2y)) = \\log_4(\\log_2(\\log_3z)) = 0log2​(log3​(log4​x))=log3​(log4​(log2​y))=log4​(log2​(",
+            "type": "type",
+            "answer": "89"
+        },
+        {
+            "id": 126,
+            "question": "If log⁡2(log⁡3(log⁡4x))=log⁡3(log⁡4(log⁡2y))=log⁡4(log⁡2(log⁡3z))=0\\log_2(\\log_3(\\log_4x)) = \\log_3(\\log_4(\\log_2y)) = \\log_4(\\log_2(\\log_3z)) = 0log2​(log3​(log4​x))=log3​(log4​(log2​y))=log4​(log2​(",
+            "type": "type",
+            "answer": "89"
+        },
+        {
+            "id": 127,
+            "question": "If log⁡2(log⁡3(log⁡4x))=log⁡3(log⁡4(log⁡2y))=log⁡4(log⁡2(log⁡3z))=0\\log_2(\\log_3(\\log_4x)) = \\log_3(\\log_4(\\log_2y)) = \\log_4(\\log_2(\\log_3z)) = 0log2​(log3​(log4​x))=log3​(log4​(log2​y))=log4​(log2​(",
+            "type": "type",
+            "answer": "89"
+        },
+        {
+            "id": 128,
+            "question": "If log⁡2(log⁡3(log⁡4x))=log⁡3(log⁡4(log⁡2y))=log⁡4(log⁡2(log⁡3z))=0\\log_2(\\log_3(\\log_4x)) = \\log_3(\\log_4(\\log_2y)) = \\log_4(\\log_2(\\log_3z)) = 0log2​(log3​(log4​x))=log3​(log4​(log2​y))=log4​(log2​(",
+            "type": "type",
+            "answer": "89"
+        },
+        {
+            "id": 129,
+            "question": "If log⁡2(log⁡3(log⁡4x))=log⁡3(log⁡4(log⁡2y))=log⁡4(log⁡2(log⁡3z))=0\\log_2(\\log_3(\\log_4x)) = \\log_3(\\log_4(\\log_2y)) = \\log_4(\\log_2(\\log_3z)) = 0log2​(log3​(log4​x))=log3​(log4​(log2​y))=log4​(log2​(",
+            "type": "type",
+            "answer": "89"
+        },
+        {
+            "id": 130,
+            "question": "If log⁡2(log⁡3(log⁡4x))=log⁡3(log⁡4(log⁡2y))=log⁡4(log⁡2(log⁡3z))=0\\log_2(\\log_3(\\log_4x)) = \\log_3(\\log_4(\\log_2y)) = \\log_4(\\log_2(\\log_3z)) = 0log2​(log3​(log4​x))=log3​(log4​(log2​y))=log4​(log2​(",
+            "type": "type",
+            "answer": "89"
+        },
+        {
+            "id": 131,
+            "question": "If log⁡2(log⁡3(log⁡4x))=log⁡3(log⁡4(log⁡2y))=log⁡4(log⁡2(log⁡3z))=0\\log_2(\\log_3(\\log_4x)) = \\log_3(\\log_4(\\log_2y)) = \\log_4(\\log_2(\\log_3z)) = 0log2​(log3​(log4​x))=log3​(log4​(log2​y))=log4​(log2​(",
+            "type": "type",
+            "answer": "89"
+        },
+        {
+            "id": 132,
+            "question": "If log⁡2(log⁡3(log⁡4x))=log⁡3(log⁡4(log⁡2y))=log⁡4(log⁡2(log⁡3z))=0\\log_2(\\log_3(\\log_4x)) = \\log_3(\\log_4(\\log_2y)) = \\log_4(\\log_2(\\log_3z)) = 0log2​(log3​(log4​x))=log3​(log4​(log2​y))=log4​(log2​(",
+            "type": "type",
+            "answer": "89"
+        },
+        {
+            "id": 133,
+            "question": "If log⁡2(log⁡3(log⁡4x))=log⁡3(log⁡4(log⁡2y))=log⁡4(log⁡2(log⁡3z))=0\\log_2(\\log_3(\\log_4x)) = \\log_3(\\log_4(\\log_2y)) = \\log_4(\\log_2(\\log_3z)) = 0log2​(log3​(log4​x))=log3​(log4​(log2​y))=log4​(log2​(",
+            "type": "type",
+            "answer": "89"
+        },
+        {
+            "id": 134,
+            "question": "If log⁡2(log⁡3(log⁡4x))=log⁡3(log⁡4(log⁡2y))=log⁡4(log⁡2(log⁡3z))=0\\log_2(\\log_3(\\log_4x)) = \\log_3(\\log_4(\\log_2y)) = \\log_4(\\log_2(\\log_3z)) = 0log2​(log3​(log4​x))=log3​(log4​(log2​y))=log4​(log2​(",
+            "type": "type",
+            "answer": "89"
+        },
+        {
+            "id": 135,
+            "question": "If log⁡2(log⁡3(log⁡4x))=log⁡3(log⁡4(log⁡2y))=log⁡4(log⁡2(log⁡3z))=0\\log_2(\\log_3(\\log_4x)) = \\log_3(\\log_4(\\log_2y)) = \\log_4(\\log_2(\\log_3z)) = 0log2​(log3​(log4​x))=log3​(log4​(log2​y))=log4​(log2​(",
+            "type": "type",
+            "answer": "89"
+        },
+        {
+            "id": 136,
+            "question": "If log⁡2(log⁡3(log⁡4x))=log⁡3(log⁡4(log⁡2y))=log⁡4(log⁡2(log⁡3z))=0\\log_2(\\log_3(\\log_4x)) = \\log_3(\\log_4(\\log_2y)) = \\log_4(\\log_2(\\log_3z)) = 0log2​(log3​(log4​x))=log3​(log4​(log2​y))=log4​(log2​(",
+            "type": "type",
+            "answer": "89"
+        },
+        {
+            "id": 137,
+            "question": "If log⁡2(log⁡3(log⁡4x))=log⁡3(log⁡4(log⁡2y))=log⁡4(log⁡2(log⁡3z))=0\\log_2(\\log_3(\\log_4x)) = \\log_3(\\log_4(\\log_2y)) = \\log_4(\\log_2(\\log_3z)) = 0log2​(log3​(log4​x))=log3​(log4​(log2​y))=log4​(log2​(",
+            "type": "type",
+            "answer": "89"
+        },
+        {
+            "id": 138,
+            "question": "If log⁡2(log⁡3(log⁡4x))=log⁡3(log⁡4(log⁡2y))=log⁡4(log⁡2(log⁡3z))=0\\log_2(\\log_3(\\log_4x)) = \\log_3(\\log_4(\\log_2y)) = \\log_4(\\log_2(\\log_3z)) = 0log2​(log3​(log4​x))=log3​(log4​(log2​y))=log4​(log2​(",
+            "type": "type",
+            "answer": "89"
+        },
+        {
+            "id": 139,
+            "question": "If log⁡2(log⁡3(log⁡4x))=log⁡3(log⁡4(log⁡2y))=log⁡4(log⁡2(log⁡3z))=0\\log_2(\\log_3(\\log_4x)) = \\log_3(\\log_4(\\log_2y)) = \\log_4(\\log_2(\\log_3z)) = 0log2​(log3​(log4​x))=log3​(log4​(log2​y))=log4​(log2​(",
+            "type": "type",
+            "answer": "89"
+        },
+        {
+            "id": 140,
+            "question": "If log⁡2(log⁡3(log⁡4x))=log⁡3(log⁡4(log⁡2y))=log⁡4(log⁡2(log⁡3z))=0\\log_2(\\log_3(\\log_4x)) = \\log_3(\\log_4(\\log_2y)) = \\log_4(\\log_2(\\log_3z)) = 0log2​(log3​(log4​x))=log3​(log4​(log2​y))=log4​(log2​(",
+            "type": "type",
+            "answer": "89"
+        },
+        {
+            "id": 141,
+            "question": "If log⁡2(log⁡3(log⁡4x))=log⁡3(log⁡4(log⁡2y))=log⁡4(log⁡2(log⁡3z))=0\\log_2(\\log_3(\\log_4x)) = \\log_3(\\log_4(\\log_2y)) = \\log_4(\\log_2(\\log_3z)) = 0log2​(log3​(log4​x))=log3​(log4​(log2​y))=log4​(log2​(",
+            "type": "type",
+            "answer": "89"
+        },
+        {
+            "id": 142,
+            "question": "If log⁡2(log⁡3(log⁡4x))=log⁡3(log⁡4(log⁡2y))=log⁡4(log⁡2(log⁡3z))=0\\log_2(\\log_3(\\log_4x)) = \\log_3(\\log_4(\\log_2y)) = \\log_4(\\log_2(\\log_3z)) = 0log2​(log3​(log4​x))=log3​(log4​(log2​y))=log4​(log2​(",
+            "type": "type",
+            "answer": "89"
+        },
+        {
+            "id": 143,
+            "question": "If log⁡2(log⁡3(log⁡4x))=log⁡3(log⁡4(log⁡2y))=log⁡4(log⁡2(log⁡3z))=0\\log_2(\\log_3(\\log_4x)) = \\log_3(\\log_4(\\log_2y)) = \\log_4(\\log_2(\\log_3z)) = 0log2​(log3​(log4​x))=log3​(log4​(log2​y))=log4​(log2​(",
+            "type": "type",
+            "answer": "89"
+        },
+        {
+            "id": 144,
+            "question": "If log⁡2(log⁡3(log⁡4x))=log⁡3(log⁡4(log⁡2y))=log⁡4(log⁡2(log⁡3z))=0\\log_2(\\log_3(\\log_4x)) = \\log_3(\\log_4(\\log_2y)) = \\log_4(\\log_2(\\log_3z)) = 0log2​(log3​(log4​x))=log3​(log4​(log2​y))=log4​(log2​(",
+            "type": "type",
+            "answer": "89"
+        },
+        {
+            "id": 145,
+            "question": "The domain of R(z)=5z3+10z2+9zR(z)=\\dfrac{5}{z^3+10 z^2+9 z}R(z)=z3+10z2+9z5​ consists of almost all real numbers except a few. What is the absolute sum of those few numbers?",
+            "type": "type",
+            "answer": "10"
+        },
+        {
+            "id": 146,
+            "question": "For a given value of xxx, the following equation holds true: x[x]=39x[x] = 39x[x]=39. What is the value of 2x2x2x?",
+            "type": "type",
+            "answer": "13"
+        },
+        {
+            "id": 147,
+            "question": "Set P = {2, 3, 5, 6, 7}",
+            "type": "mcq",
+            "answer": "D"
+        },
+        {
+            "id": 148,
+            "question": "If [x]2−5[x]+6=0[x]^2-5[x]+6=0[x]2−5[x]+6=0, where [[[.]]] denotes the greatest integer function, then",
+            "type": "mcq",
+            "answer": "D"
+        },
+        {
+            "id": 149,
+            "question": "Let f(x)=∣x3−8x2+17x−10∣f(x) = |x^3 - 8x^2 + 17x - 10|f(x)=∣x3−8x2+17x−10∣. Find the sum of all distinct real solutions to the equation f(x)=0f(x) = 0f(x)=0",
+            "type": "mcq",
+            "answer": "D"
+        },
+        {
+            "id": 150,
+            "question": "If f:R→Rf: R \\rightarrow Rf:R→R is defined by f(x)=x2−3x+2f(x) = x^2 − 3x + 2f(x)=x2−3x+2, find f(f(x))f(f(x))f(f(x))",
+            "type": "mcq",
+            "answer": "A"
+        },
+        {
+            "id": 151,
+            "question": "How can you express the area of a square as a function of its perimeter if the perimeter is PPP?",
+            "type": "mcq",
+            "answer": "C"
+        },
+        {
+            "id": 152,
+            "question": "Which of the following functions are identical?",
+            "type": "mcq",
+            "answer": "C"
+        },
+        {
+            "id": 153,
+            "question": "If f:R→Rf: R \\rightarrow Rf:R→R be given by f(x)=(3−x3)13f(x)=\\left(3-x^3\\right)^{\\frac{1}{3}}f(x)=(3−x3)31​, then f∘f(x)f \\circ f(x)f∘f(x) is",
+            "type": "mcq",
+            "answer": "C"
+        },
+        {
+            "id": 154,
+            "question": "If log⁡2(log⁡3(log⁡4x))=log⁡3(log⁡4(log⁡2y))=log⁡4(log⁡2(log⁡3z))=0\\log_2(\\log_3(\\log_4x)) = \\log_3(\\log_4(\\log_2y)) = \\log_4(\\log_2(\\log_3z)) = 0log2​(log3​(log4​x))=log3​(log4​(log2​y))=log4​(log2​(",
+            "type": "type",
+            "answer": "89"
+        },
+        {
+            "id": 155,
+            "question": "If log⁡2(log⁡3(log⁡4x))=log⁡3(log⁡4(log⁡2y))=log⁡4(log⁡2(log⁡3z))=0\\log_2(\\log_3(\\log_4x)) = \\log_3(\\log_4(\\log_2y)) = \\log_4(\\log_2(\\log_3z)) = 0log2​(log3​(log4​x))=log3​(log4​(log2​y))=log4​(log2​(",
+            "type": "type",
+            "answer": "89"
+        },
+        {
+            "id": 156,
+            "question": "If log⁡2(log⁡3(log⁡4x))=log⁡3(log⁡4(log⁡2y))=log⁡4(log⁡2(log⁡3z))=0\\log_2(\\log_3(\\log_4x)) = \\log_3(\\log_4(\\log_2y)) = \\log_4(\\log_2(\\log_3z)) = 0log2​(log3​(log4​x))=log3​(log4​(log2​y))=log4​(log2​(",
+            "type": "type",
+            "answer": "89"
+        },
+        {
+            "id": 157,
+            "question": "If log⁡2(log⁡3(log⁡4x))=log⁡3(log⁡4(log⁡2y))=log⁡4(log⁡2(log⁡3z))=0\\log_2(\\log_3(\\log_4x)) = \\log_3(\\log_4(\\log_2y)) = \\log_4(\\log_2(\\log_3z)) = 0log2​(log3​(log4​x))=log3​(log4​(log2​y))=log4​(log2​(",
+            "type": "type",
+            "answer": "89"
+        },
+        {
+            "id": 158,
+            "question": "If log⁡2(log⁡3(log⁡4x))=log⁡3(log⁡4(log⁡2y))=log⁡4(log⁡2(log⁡3z))=0\\log_2(\\log_3(\\log_4x)) = \\log_3(\\log_4(\\log_2y)) = \\log_4(\\log_2(\\log_3z)) = 0log2​(log3​(log4​x))=log3​(log4​(log2​y))=log4​(log2​(",
+            "type": "type",
+            "answer": "89"
+        },
+        {
+            "id": 159,
+            "question": "If log⁡2(log⁡3(log⁡4x))=log⁡3(log⁡4(log⁡2y))=log⁡4(log⁡2(log⁡3z))=0\\log_2(\\log_3(\\log_4x)) = \\log_3(\\log_4(\\log_2y)) = \\log_4(\\log_2(\\log_3z)) = 0log2​(log3​(log4​x))=log3​(log4​(log2​y))=log4​(log2​(",
+            "type": "type",
+            "answer": "89"
+        },
+        {
+            "id": 160,
+            "question": "If log⁡2(log⁡3(log⁡4x))=log⁡3(log⁡4(log⁡2y))=log⁡4(log⁡2(log⁡3z))=0\\log_2(\\log_3(\\log_4x)) = \\log_3(\\log_4(\\log_2y)) = \\log_4(\\log_2(\\log_3z)) = 0log2​(log3​(log4​x))=log3​(log4​(log2​y))=log4​(log2​(",
+            "type": "type",
+            "answer": "89"
+        },
+        {
+            "id": 161,
+            "question": "If log⁡2(log⁡3(log⁡4x))=log⁡3(log⁡4(log⁡2y))=log⁡4(log⁡2(log⁡3z))=0\\log_2(\\log_3(\\log_4x)) = \\log_3(\\log_4(\\log_2y)) = \\log_4(\\log_2(\\log_3z)) = 0log2​(log3​(log4​x))=log3​(log4​(log2​y))=log4​(log2​(",
+            "type": "type",
+            "answer": "89"
+        },
+        {
+            "id": 162,
+            "question": "If log⁡2(log⁡3(log⁡4x))=log⁡3(log⁡4(log⁡2y))=log⁡4(log⁡2(log⁡3z))=0\\log_2(\\log_3(\\log_4x)) = \\log_3(\\log_4(\\log_2y)) = \\log_4(\\log_2(\\log_3z)) = 0log2​(log3​(log4​x))=log3​(log4​(log2​y))=log4​(log2​(",
+            "type": "type",
+            "answer": "89"
+        },
+        {
+            "id": 163,
+            "question": "If log⁡2(log⁡3(log⁡4x))=log⁡3(log⁡4(log⁡2y))=log⁡4(log⁡2(log⁡3z))=0\\log_2(\\log_3(\\log_4x)) = \\log_3(\\log_4(\\log_2y)) = \\log_4(\\log_2(\\log_3z)) = 0log2​(log3​(log4​x))=log3​(log4​(log2​y))=log4​(log2​(",
+            "type": "type",
+            "answer": "89"
+        },
+        {
+            "id": 164,
+            "question": "If log⁡2(log⁡3(log⁡4x))=log⁡3(log⁡4(log⁡2y))=log⁡4(log⁡2(log⁡3z))=0\\log_2(\\log_3(\\log_4x)) = \\log_3(\\log_4(\\log_2y)) = \\log_4(\\log_2(\\log_3z)) = 0log2​(log3​(log4​x))=log3​(log4​(log2​y))=log4​(log2​(",
+            "type": "type",
+            "answer": "89"
+        },
+        {
+            "id": 165,
+            "question": "If log⁡2(log⁡3(log⁡4x))=log⁡3(log⁡4(log⁡2y))=log⁡4(log⁡2(log⁡3z))=0\\log_2(\\log_3(\\log_4x)) = \\log_3(\\log_4(\\log_2y)) = \\log_4(\\log_2(\\log_3z)) = 0log2​(log3​(log4​x))=log3​(log4​(log2​y))=log4​(log2​(",
+            "type": "type",
+            "answer": "89"
+        },
+        {
+            "id": 166,
+            "question": "If log⁡2(log⁡3(log⁡4x))=log⁡3(log⁡4(log⁡2y))=log⁡4(log⁡2(log⁡3z))=0\\log_2(\\log_3(\\log_4x)) = \\log_3(\\log_4(\\log_2y)) = \\log_4(\\log_2(\\log_3z)) = 0log2​(log3​(log4​x))=log3​(log4​(log2​y))=log4​(log2​(",
+            "type": "type",
+            "answer": "89"
+        },
+        {
+            "id": 167,
+            "question": "If log⁡2(log⁡3(log⁡4x))=log⁡3(log⁡4(log⁡2y))=log⁡4(log⁡2(log⁡3z))=0\\log_2(\\log_3(\\log_4x)) = \\log_3(\\log_4(\\log_2y)) = \\log_4(\\log_2(\\log_3z)) = 0log2​(log3​(log4​x))=log3​(log4​(log2​y))=log4​(log2​(",
+            "type": "type",
+            "answer": "89"
+        },
+        {
+            "id": 168,
+            "question": "If log⁡2(log⁡3(log⁡4x))=log⁡3(log⁡4(log⁡2y))=log⁡4(log⁡2(log⁡3z))=0\\log_2(\\log_3(\\log_4x)) = \\log_3(\\log_4(\\log_2y)) = \\log_4(\\log_2(\\log_3z)) = 0log2​(log3​(log4​x))=log3​(log4​(log2​y))=log4​(log2​(",
+            "type": "type",
+            "answer": "89"
+        },
+        {
+            "id": 169,
+            "question": "If log⁡2(log⁡3(log⁡4x))=log⁡3(log⁡4(log⁡2y))=log⁡4(log⁡2(log⁡3z))=0\\log_2(\\log_3(\\log_4x)) = \\log_3(\\log_4(\\log_2y)) = \\log_4(\\log_2(\\log_3z)) = 0log2​(log3​(log4​x))=log3​(log4​(log2​y))=log4​(log2​(",
+            "type": "type",
+            "answer": "89"
+        },
+        {
+            "id": 170,
+            "question": "If log⁡2(log⁡3(log⁡4x))=log⁡3(log⁡4(log⁡2y))=log⁡4(log⁡2(log⁡3z))=0\\log_2(\\log_3(\\log_4x)) = \\log_3(\\log_4(\\log_2y)) = \\log_4(\\log_2(\\log_3z)) = 0log2​(log3​(log4​x))=log3​(log4​(log2​y))=log4​(log2​(",
+            "type": "type",
+            "answer": "89"
+        },
+        {
+            "id": 171,
+            "question": "If log⁡2(log⁡3(log⁡4x))=log⁡3(log⁡4(log⁡2y))=log⁡4(log⁡2(log⁡3z))=0\\log_2(\\log_3(\\log_4x)) = \\log_3(\\log_4(\\log_2y)) = \\log_4(\\log_2(\\log_3z)) = 0log2​(log3​(log4​x))=log3​(log4​(log2​y))=log4​(log2​(",
+            "type": "type",
+            "answer": "89"
+        },
+        {
+            "id": 172,
+            "question": "If log⁡2(log⁡3(log⁡4x))=log⁡3(log⁡4(log⁡2y))=log⁡4(log⁡2(log⁡3z))=0\\log_2(\\log_3(\\log_4x)) = \\log_3(\\log_4(\\log_2y)) = \\log_4(\\log_2(\\log_3z)) = 0log2​(log3​(log4​x))=log3​(log4​(log2​y))=log4​(log2​(",
+            "type": "type",
+            "answer": "89"
+        },
+        {
+            "id": 173,
+            "question": "If log⁡2(log⁡3(log⁡4x))=log⁡3(log⁡4(log⁡2y))=log⁡4(log⁡2(log⁡3z))=0\\log_2(\\log_3(\\log_4x)) = \\log_3(\\log_4(\\log_2y)) = \\log_4(\\log_2(\\log_3z)) = 0log2​(log3​(log4​x))=log3​(log4​(log2​y))=log4​(log2​(",
+            "type": "type",
+            "answer": "89"
+        },
+        {
+            "id": 174,
+            "question": "If log⁡2(log⁡3(log⁡4x))=log⁡3(log⁡4(log⁡2y))=log⁡4(log⁡2(log⁡3z))=0\\log_2(\\log_3(\\log_4x)) = \\log_3(\\log_4(\\log_2y)) = \\log_4(\\log_2(\\log_3z)) = 0log2​(log3​(log4​x))=log3​(log4​(log2​y))=log4​(log2​(",
+            "type": "type",
+            "answer": "89"
+        },
+        {
+            "id": 175,
+            "question": "If log⁡2(log⁡3(log⁡4x))=log⁡3(log⁡4(log⁡2y))=log⁡4(log⁡2(log⁡3z))=0\\log_2(\\log_3(\\log_4x)) = \\log_3(\\log_4(\\log_2y)) = \\log_4(\\log_2(\\log_3z)) = 0log2​(log3​(log4​x))=log3​(log4​(log2​y))=log4​(log2​(",
+            "type": "type",
+            "answer": "89"
+        },
+        {
+            "id": 176,
+            "question": "If log⁡2(log⁡3(log⁡4x))=log⁡3(log⁡4(log⁡2y))=log⁡4(log⁡2(log⁡3z))=0\\log_2(\\log_3(\\log_4x)) = \\log_3(\\log_4(\\log_2y)) = \\log_4(\\log_2(\\log_3z)) = 0log2​(log3​(log4​x))=log3​(log4​(log2​y))=log4​(log2​(",
+            "type": "type",
+            "answer": "89"
+        },
+        {
+            "id": 177,
+            "question": "If log⁡2(log⁡3(log⁡4x))=log⁡3(log⁡4(log⁡2y))=log⁡4(log⁡2(log⁡3z))=0\\log_2(\\log_3(\\log_4x)) = \\log_3(\\log_4(\\log_2y)) = \\log_4(\\log_2(\\log_3z)) = 0log2​(log3​(log4​x))=log3​(log4​(log2​y))=log4​(log2​(",
+            "type": "type",
+            "answer": "89"
+        },
+        {
+            "id": 178,
+            "question": "If log⁡2(log⁡3(log⁡4x))=log⁡3(log⁡4(log⁡2y))=log⁡4(log⁡2(log⁡3z))=0\\log_2(\\log_3(\\log_4x)) = \\log_3(\\log_4(\\log_2y)) = \\log_4(\\log_2(\\log_3z)) = 0log2​(log3​(log4​x))=log3​(log4​(log2​y))=log4​(log2​(",
+            "type": "type",
+            "answer": "89"
+        },
+        {
+            "id": 179,
+            "question": "If log⁡2(log⁡3(log⁡4x))=log⁡3(log⁡4(log⁡2y))=log⁡4(log⁡2(log⁡3z))=0\\log_2(\\log_3(\\log_4x)) = \\log_3(\\log_4(\\log_2y)) = \\log_4(\\log_2(\\log_3z)) = 0log2​(log3​(log4​x))=log3​(log4​(log2​y))=log4​(log2​(",
+            "type": "type",
+            "answer": "89"
+        },
+        {
+            "id": 180,
+            "question": "If log⁡2(log⁡3(log⁡4x))=log⁡3(log⁡4(log⁡2y))=log⁡4(log⁡2(log⁡3z))=0\\log_2(\\log_3(\\log_4x)) = \\log_3(\\log_4(\\log_2y)) = \\log_4(\\log_2(\\log_3z)) = 0log2​(log3​(log4​x))=log3​(log4​(log2​y))=log4​(log2​(",
+            "type": "type",
+            "answer": "89"
+        },
+        {
+            "id": 181,
+            "question": "If log⁡2(log⁡3(log⁡4x))=log⁡3(log⁡4(log⁡2y))=log⁡4(log⁡2(log⁡3z))=0\\log_2(\\log_3(\\log_4x)) = \\log_3(\\log_4(\\log_2y)) = \\log_4(\\log_2(\\log_3z)) = 0log2​(log3​(log4​x))=log3​(log4​(log2​y))=log4​(log2​(",
+            "type": "type",
+            "answer": "89"
+        },
+        {
+            "id": 182,
+            "question": "If log⁡2(log⁡3(log⁡4x))=log⁡3(log⁡4(log⁡2y))=log⁡4(log⁡2(log⁡3z))=0\\log_2(\\log_3(\\log_4x)) = \\log_3(\\log_4(\\log_2y)) = \\log_4(\\log_2(\\log_3z)) = 0log2​(log3​(log4​x))=log3​(log4​(log2​y))=log4​(log2​(",
+            "type": "type",
+            "answer": "89"
+        },
+        {
+            "id": 183,
+            "question": "If log⁡2(log⁡3(log⁡4x))=log⁡3(log⁡4(log⁡2y))=log⁡4(log⁡2(log⁡3z))=0\\log_2(\\log_3(\\log_4x)) = \\log_3(\\log_4(\\log_2y)) = \\log_4(\\log_2(\\log_3z)) = 0log2​(log3​(log4​x))=log3​(log4​(log2​y))=log4​(log2​(",
+            "type": "type",
+            "answer": "89"
         }
     ]
 }

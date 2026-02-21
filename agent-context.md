@@ -31,12 +31,14 @@
 5. **Unique Question IDs**: Each question is assigned a unique numeric ID (1, 2, 3...) for easy reference and tracking
 6. **Auto-Migration**: Existing questions without IDs are automatically assigned IDs on first load
 7. **Editable Configuration**: All settings can be changed via `config.json` or the CLI menu (option 5)
+8. **Browser Auto-Detection**: Automatically detects installed Chromium browsers (Chrome, Brave, Edge, Chromium, Opera, Vivaldi) on Windows. On first run, prompts user to select from detected browsers — no manual path entry needed. Uses existing browser profile (no new profile created). Detection runs once at startup, zero impact on automation speed.
 
 ### Configuration (config.json)
 ```json
 {
-    "browserPath": "C:\\Users\\...\\brave.exe",
-    "userDataDir": "C:\\Users\\...\\User Data",
+    "browserPath": "",
+    "userDataDir": "",
+    "browserName": "",
     "practiceUrl": "https://www.afterboards.in/practice?section=",
     "delayPerQuestion": 3000,
     "questionsToAnswer": 3,
@@ -49,8 +51,9 @@
 
 | Setting | Description |
 |---------|-------------|
-| `browserPath` | Path to Brave/Chrome executable |
-| `userDataDir` | Browser profile directory (for keeping login) |
+| `browserPath` | Path to browser executable (auto-detected) |
+| `userDataDir` | Browser profile directory (auto-detected) |
+| `browserName` | Friendly name of selected browser |
 | `practiceUrl` | Base URL for practice tests |
 | `delayPerQuestion` | Wait time between questions (ms) |
 | `questionsToAnswer` | How many questions to answer correctly |
@@ -67,9 +70,9 @@
   - Bidirectional token overlap (60% weight)
 
 ### How to Run
-1. Close ALL Brave browser windows
-2. Run `npm start`
-3. Use menu option **5** to edit configuration if needed
+1. Run `npm start`
+2. On first run, **select your browser** from the auto-detected list
+3. Use menu option **6** to change browser later, or **5** to edit other config
 4. Press **1** to start automation
 5. Watch as it auto-learns new questions!
 
