@@ -1,3 +1,5 @@
+// Clear the console on script start
+console.clear();
 const puppeteer = require('puppeteer-core');
 const fs = require('fs');
 const path = require('path');
