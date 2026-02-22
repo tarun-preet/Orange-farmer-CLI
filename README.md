@@ -114,11 +114,11 @@ The script needs one additional package (puppeteer-core) to control your browser
 2. Navigate to the project folder. For example:
    - **Windows**:
      ```
-     cd C:\Users\YourName\Desktop\Raze
+     cd C:\Users\YourName\Desktop\orange-farmer-CLI
      ```
    - **macOS**:
      ```
-     cd ~/Desktop/Raze
+     cd ~/Desktop/orange-farmer-CLI
      ```
    > 💡 **Tip**: Replace the path with wherever your project folder actually is.
 3. Run this command:
@@ -153,7 +153,7 @@ Every time you want to use Orange Farmer:
 2. Open a terminal / command prompt
 3. Navigate to the project folder:
    ```
-   cd C:\Users\YourName\Desktop\Raze
+   cd C:\Users\YourName\Desktop\orange-farmer-CLI
    ```
 4. Start the bot:
    ```
@@ -326,7 +326,7 @@ The bot automatically builds this file. Each entry looks like:
 
 ## 👤 Credits
 
-Made by **apartment firm**
+Made by **Apartment firm**
 
 ## ⚖️ Disclaimer
 
