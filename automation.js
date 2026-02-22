@@ -897,8 +897,10 @@ async function startAutomation() {
         executablePath: CONFIG.browserPath,
         headless: CONFIG.headless,
         defaultViewport: null,
-        userDataDir: CONFIG.userDataDir,
-        args: ['--start-maximized']
+        args: [
+            '--start-maximized',
+            `--user-data-dir=${CONFIG.userDataDir}`
+        ]
     });
 
     const page = await browser.newPage();
