@@ -1,5 +1,9 @@
 # 🍊 Orange Farmer — Afterboards Auto-Learning Bot
 
+<p align="center">
+  <img src="orange-farmer-banner.jpg" alt="Orange Farmer Banner" width="400"/>
+</p>
+
 An intelligent automation tool for **afterboards.in** practice tests that **learns as it plays**. The bot answers questions, extracts the correct answers after submission, and saves them for future use — getting smarter with every cycle.
 
 > **Works on Windows & macOS** — supports Brave, Edge, Chromium, Opera, and Vivaldi.
